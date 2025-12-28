@@ -1,0 +1,9 @@
+# 忽略 Windows 的保留字黑洞
+nul
+NUL
+
+# 忽略 Go 的二进制文件和 IDE 配置
+*.exe
+*.exe~
+.idea/
+bin/
