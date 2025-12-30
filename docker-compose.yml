@@ -1,0 +1,35 @@
+services:
+  # 数据库服务
+  db:
+    image: postgres:15-alpine
+    container_name: vv-maps-db
+    restart: always
+    environment:
+      POSTGRES_USER: vvuser
+      POSTGRES_PASSWORD: vvpassword
+      POSTGRES_DB: vvtraffic
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  # Go 应用服务
+  app:
+    build: .
+    container_name: vv-maps-app
+    restart: always
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      # 这里的值必须对应 db 服务中的配置
+      DB_HOST: db          # 在 Docker 网络中，服务名即 Host
+      DB_PORT: 5432
+      DB_USER: vvuser
+      DB_PASSWORD: vvpassword
+      DB_NAME: vvtraffic
+      GIN_MODE: release
+
+volumes:
+  postgres_data:

@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"traffic-system/algo"
+	"traffic-system/db"
 	"traffic-system/handler"
 
 	"github.com/gin-gonic/gin"
@@ -12,24 +13,30 @@ import (
 func main() {
 	fmt.Println("=== 欢迎使用 VV Maps - 智能交通导航系统 ===")
 
-	// 1. 加载地图数据
-	fmt.Println("正在加载地图数据...")
-	graph, err := algo.LoadFromJSON("map_data.json")
+	// 1. 初始化数据库
+	// 连接 PostgreSQL，自动迁移表结构
+	// 如果是第一次运行，会自动将 map_data.json 的数据导入数据库
+	db.InitDB()
+
+	// 2. 加载地图数据 (从数据库加载)
+	// 注意：这里已经改为 LoadFromDB，不再读取本地 JSON 文件
+	fmt.Println("正在从数据库构建图...")
+	graph, err := algo.LoadFromDB()
 	if err != nil {
-		log.Fatalf("加载地图数据失败: %v", err)
+		log.Fatalf("从数据库加载地图失败: %v", err)
 	}
 	fmt.Printf("地图加载成功! 节点数: %d\n", len(graph.Nodes))
 
-	// 2. 将图对象传递给 handler
+	// 3. 将图对象传递给 handler (用于路径规划接口)
 	handler.Graph = graph
 
-	// 3. 初始化 Gin 引擎
+	// 4. 初始化 Gin 引擎
 	r := gin.Default()
 
-	// 4. 设置路由
+	// 5. 配置路由
 	setupRoutes(r)
 
-	// 5. 启动服务器
+	// 6. 启动服务器
 	fmt.Println("\n服务器启动中...")
 	fmt.Println("访问地址: http://localhost:8080")
 	fmt.Println("前端页面: http://localhost:8080/static/")
@@ -84,15 +91,15 @@ func setupRoutes(r *gin.Engine) {
 		api.POST("/login", handler.Login)
 		api.POST("/register", handler.Register)
 
-		// 地图相关接口 (暂时不需要认证，实际项目可加上)
+		// 地图相关接口
 		api.POST("/path/find", handler.FindPath)
 		api.GET("/nodes", handler.GetNodes)
 		api.GET("/nodes/search", handler.SearchNodes)
 		api.GET("/nodes/:id", handler.GetNodeByID)
 
-		// 需要认证的接口示例
+		// 如果将来需要认证，可以解开下面的注释
 		// authorized := api.Group("/")
-		// authorized.Use(handler.AuthMiddleware())
+		// authorizclaudeed.Use(handler.AuthMiddleware())
 		// {
 		//     authorized.POST("/path/find", handler.FindPath)
 		// }

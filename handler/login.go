@@ -1,13 +1,16 @@
 package handler
 
 import (
+	"errors"
 	"net/http"
 	"time"
+	"traffic-system/db"
 	"traffic-system/model"
 	"traffic-system/utils"
 
 	"github.com/gin-gonic/gin"
 	"github.com/golang-jwt/jwt/v5"
+	"gorm.io/gorm"
 )
 
 // JWT 密钥 (生产环境应从环境变量读取)
@@ -15,7 +18,7 @@ var jwtSecret = []byte("your-secret-key-change-in-production")
 
 // Claims JWT 载荷
 type Claims struct {
-	UserID   string `json:"user_id"`
+	UserID   uint   `json:"user_id"` // 适配 GORM 的 uint 主键
 	Username string `json:"username"`
 	jwt.RegisteredClaims
 }
@@ -33,16 +36,6 @@ type LoginResponse struct {
 	Message  string `json:"message"`
 }
 
-// 模拟用户数据库 (实际项目应使用真实数据库)
-var users = map[string]*model.User{
-	"admin": {
-		ID:       "user_001",
-		Username: "admin",
-		Password: "$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy", // "admin123" 的 bcrypt hash
-		Email:    "admin@example.com",
-	},
-}
-
 // Login 处理用户登录
 func Login(c *gin.Context) {
 	var req LoginRequest
@@ -51,22 +44,27 @@ func Login(c *gin.Context) {
 		return
 	}
 
-	// 查找用户
-	user, exists := users[req.Username]
-	if !exists {
-		c.JSON(http.StatusUnauthorized, gin.H{"error": "用户名或密码错误"})
+	// 1. 从数据库查找用户
+	var user model.User
+	// 使用 Where 查询，First 获取第一条记录
+	if err := db.DB.Where("username = ?", req.Username).First(&user).Error; err != nil {
+		if errors.Is(err, gorm.ErrRecordNotFound) {
+			c.JSON(http.StatusUnauthorized, gin.H{"error": "用户名或密码错误"})
+		} else {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "数据库查询出错"})
+		}
 		return
 	}
 
-	// 验证密码
+	// 2. 验证密码
 	if !utils.CheckPassword(user.Password, req.Password) {
 		c.JSON(http.StatusUnauthorized, gin.H{"error": "用户名或密码错误"})
 		return
 	}
 
-	// 生成 JWT Token
+	// 3. 生成 JWT Token
 	claims := &Claims{
-		UserID:   user.ID,
+		UserID:   user.ID, // 使用数据库生成的 ID (uint)
 		Username: user.Username,
 		RegisteredClaims: jwt.RegisteredClaims{
 			ExpiresAt: jwt.NewNumericDate(time.Now().Add(24 * time.Hour)),
@@ -102,32 +100,39 @@ func Register(c *gin.Context) {
 		return
 	}
 
-	// 检查用户是否已存在
-	if _, exists := users[req.Username]; exists {
+	// 1. 检查用户是否已存在
+	var existingUser model.User
+	// 如果能查到记录，说明用户已存在
+	if err := db.DB.Where("username = ?", req.Username).First(&existingUser).Error; err == nil {
 		c.JSON(http.StatusConflict, gin.H{"error": "用户名已存在"})
 		return
 	}
 
-	// 加密密码
+	// 2. 加密密码
 	hashedPassword, err := utils.HashPassword(req.Password)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "密码加密失败"})
 		return
 	}
 
-	// 创建新用户
-	newUser := &model.User{
-		ID:       "user_" + req.Username,
+	// 3. 创建新用户
+	newUser := model.User{
+		// ID 由数据库自动生成，不需要手动赋值 "user_xxx"
 		Username: req.Username,
 		Password: hashedPassword,
 		Email:    req.Email,
 	}
 
-	users[req.Username] = newUser
+	// 插入数据库
+	if err := db.DB.Create(&newUser).Error; err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "注册用户失败"})
+		return
+	}
 
 	c.JSON(http.StatusCreated, gin.H{
 		"message":  "注册成功",
 		"username": newUser.Username,
+		"id":       newUser.ID, // 返回生成的数据库 ID
 	})
 }
 

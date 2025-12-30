@@ -14,9 +14,9 @@ type PointXY struct {
 
 // Node 对应地图上的一个点 (站点、路口、地标)
 type Node struct {
-	ID   string  `json:"id"`
-	Name string  `json:"name"`
+	ID   string  `json:"id" gorm:"primaryKey"`
+	Name string  `json:"name" gorm:"index"`
 	Lat  float64 `json:"lat"`
 	Lng  float64 `json:"lng"`
-	Type string  `json:"type"` // 如: "landmark", "subway_entrance", "bus_stop"
+	Type string  `json:"type" gorm:"index"` // 如: "landmark", "subway_entrance", "bus_stop"
 }

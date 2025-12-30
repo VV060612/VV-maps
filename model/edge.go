@@ -1,16 +1,19 @@
 package model
 
+import "github.com/lib/pq"
+
 // Edge 对应两点之间的一条连线
 type Edge struct {
-	From   string   `json:"from"`
-	To     string   `json:"to"`
-	Dist   float64  `json:"dist"`              // 距离 (米), 已经算好
-	Modes  []string `json:"modes"`             // 原始模式列表: ["car", "bus"]
-	LineID string   `json:"line_id,omitempty"` // 线路ID, 仅公交/地铁有
-	Desc   string   `json:"desc,omitempty"`    // 描述
+	ID     uint           `json:"-" gorm:"primaryKey;autoIncrement"`
+	From   string         `json:"from" gorm:"index;not null"`
+	To     string         `json:"to" gorm:"index;not null"`
+	Dist   float64        `json:"dist"`                       // 距离 (米), 已经算好
+	Modes  pq.StringArray `json:"modes" gorm:"type:text[]"`   // 原始模式列表: ["car", "bus"]
+	LineID string         `json:"line_id,omitempty"`          // 线路ID, 仅公交/地铁有
+	Desc   string         `json:"desc,omitempty"`             // 描述
 
 	// --- 下面这个字段 JSON 里没有，是我们在加载数据后算出来的 ---
-	ModeMask int `json:"-"` // 位掩码，用于算法中毫秒级判断通行权限
+	ModeMask int `json:"-" gorm:"-"` // 位掩码，用于算法中毫秒级判断通行权限
 }
 
 // MapData 用于解析整个 JSON 文件
