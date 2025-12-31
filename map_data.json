@@ -1,430 +1,5342 @@
 {
   "meta": {
-    "version": "5.0 (User-Calibrated)",
+    "anchor_point": "HAUT_South_Gate: 34.8282524, 113.5452810",
     "description": "河南工业大学莲花街校区-郑州大学区域主要路网",
-    "anchor_point": "HAUT_South_Gate: 34.8282524, 113.5452810"
+    "version": "(User-Calibrated)"
   },
   "nodes": [
-    { "id": "haut_gate_s", "name": "河南工业大学莲花街校区-南门", "lat":  34.8282524, "lng": 113.5452810, "type": "landmark" },
-    { "id": "haut_gate_e", "name": "河南工业大学莲花街校区-东门", "lat": 34.8309869, "lng": 113.5511068, "type": "landmark" },
-    { "id": "haut_gate_w", "name": "河南工业大学莲花街校区-西门", "lat":  34.8318896, "lng": 113.5363922, "type": "landmark" },
-
-    { "id": "zzu_gate_n", "name": "郑州大学-北门", "lat":  34.8281335, "lng": 113.5301185, "type": "landmark" },
-    { "id": "zzu_gate_e", "name": "郑州大学-东门", "lat": 34.8180291, "lng": 113.5355365, "type": "landmark" },
-    { "id": "zzu_gate_s", "name": "郑州大学-南门", "lat":  34.8089211, "lng": 113.5293540, "type": "landmark" },
-
-    { "id": "cross_lianhua_xuesong", "name": "路口-莲花街/雪松路", "lat":  34.8281599, "lng": 113.5511041, "type": "road_node" },
-    { "id": "cross_lianhua_changchun", "name": "路口-莲花街/长椿路", "lat": 34.8282520, "lng": 113.5362450, "type": "road_node" },
-    { "id": "cross_lianhua_xisihuan", "name": "路口-莲花街/西四环", "lat": 34.8281951, "lng": 113.5247701, "type": "road_node" },
-
-    { "id": "cross_yingchun_xuesong", "name": "路口-迎春街/雪松路", "lat":  34.8204843, "lng": 113.5511845, "type": "road_node" },
-    { "id": "cross_cuizhu_xuesong", "name": "路口-翠竹街/雪松路", "lat": 34.8181040, "lng": 113.5497147, "type": "road_node" },
-    { "id": "cross_cuizhu_shinan", "name": "路口-翠竹街/石楠路", "lat":  34.8180929, "lng": 113.5452998, "type": "road_node" },
-
-    { "id": "cross_kexuedadao_xisihuan", "name": "路口-科学大道/西四环", "lat":  34.8089497, "lng": 113.5229194, "type": "road_node" },
-    { "id": "cross_kexuedadao_changchun", "name": "路口-科学大道/长椿路", "lat": 34.8089849, "lng": 113.5348392, "type": "road_node" },
-    { "id": "cross_kexuedadao_xuesong", "name": "路口-科学大道/雪松路", "lat":  34.8088950, "lng": 113.5496530, "type": "road_node" },
-    { "id": "cross_kexuedadao_shinan", "name": "路口-科学大道/石楠路", "lat":  34.8089233, "lng": 113.5453212, "type": "road_node" },
-
-    { "id": "sub_haut", "name": "地铁站-河南工业大学", "lat": 34.8289019, "lng": 113.5365316, "type": "subway_entrance" },
-    { "id": "sub_zzuscipark", "name": "地铁站-郑大科技园", "lat":  34.8182690, "lng": 113.5364540, "type": "subway_entrance" },
-    { "id": "sub_zzu", "name": "地铁站-郑州大学站", "lat":  34.8091567, "lng": 113.5345307, "type": "subway_entrance" },
-
-    { "id": "bus_dongshimashequbeimen_W", "name": "公交站-东史马社区北门-W", "lat":  34.8317399, "lng": 113.5530031, "type": "bus_stop" },
-    { "id": "bus_dongshimashequbeimen_E", "name": "公交站-东史马社区北门-E", "lat":  34.8315814, "lng": 113.5532954, "type": "bus_stop" },
-
-    { "id": "bus_daxiexincun_N", "name": "公交站-大榭新村站-N", "lat":  34.8314450, "lng": 113.5365050, "type": "bus_stop" },
-    { "id": "bus_daxiexincun_S", "name": "公交站-大榭新村站-S", "lat":  34.8300490, "lng": 113.5360086, "type": "bus_stop" },
-
-    { "id": "bus_qianhewanxiangcheng_N", "name": "公交站-谦祥万和城站-N", "lat":  34.8342010, "lng": 113.5366070, "type": "bus_stop" },
-    { "id": "bus_qianhewanxiangcheng_S", "name": "公交站-谦祥万和城站-S", "lat":  34.8341480, "lng": 113.5360410, "type": "bus_stop" },
-
-    { "id": "bus_changcunlulianhuajie_S", "name": "公交站-长椿路莲花街站-S", "lat":  34.8273178, "lng": 113.5357900, "type": "bus_stop" },
-
-    { "id": "bus_changcunlujinjujie_N", "name": "公交站-长椿路金菊街站-N", "lat":  34.8229163, "lng": 113.5361534, "type": "bus_stop" },
-    { "id": "bus_changcunlujinjujie_S", "name": "公交站-长椿路金菊街站-S", "lat":  34.8228734, "lng": 113.5357216, "type": "bus_stop" },
-
-    { "id": "bus_changcuilucuizhujie_N", "name": "公交站-长翠路翠竹街站-N", "lat":  34.8191449, "lng": 113.5359972, "type": "bus_stop" },
-    { "id": "bus_changcuilucuizhujie_S", "name": "公交站-长翠路翠竹街站-S", "lat":  34.8169347, "lng": 113.5353407, "type": "bus_stop" },
-
-    { "id": "bus_changcunlufengyangjie_N", "name": "公交站-长椿路枫杨街站-N", "lat":  34.8159790, "lng": 113.5358530, "type": "bus_stop" },
-    { "id": "bus_changcunlufengyangjie_S", "name": "公交站-长椿路枫杨街站-S", "lat":  34.8140720, "lng": 113.5352470, "type": "bus_stop" },
-
-    { "id": "bus_changcunlukexuedadao_N", "name": "公交站-长椿路科学大道-N", "lat":  34.8098218, "lng": 113.5355848, "type": "bus_stop" },
-    { "id": "bus_changcunlukexuedadao_S", "name": "公交站-长椿路科学大道-S", "lat":  34.8076680, "lng": 113.5349223, "type": "bus_stop" },
-
-    { "id": "bus_lianhuajiexuesonglu_W", "name": "公交站-莲花街雪松路站-W", "lat":  34.8281566, "lng": 113.5501640, "type": "bus_stop" },
-    { "id": "bus_lianhuajiexuesonglu_E", "name": "公交站-莲花街雪松路站-E", "lat":  34.8279133, "lng": 113.5504174, "type": "bus_stop" },
-
-    { "id": "bus_henangongyedaxuezhan_W", "name": "公交站-河南工业大学站-W", "lat":  34.8281841, "lng": 113.5444736, "type": "bus_stop" },
-    { "id": "bus_henangongyedaxuezhan_E", "name": "公交站-河南工业大学站-E", "lat":  34.8280625, "lng": 113.5460823, "type": "bus_stop" },
-
-    { "id": "bus_hanlinguojichenshequbeimen_W", "name": "公交站-翰林国际城社区北门-W", "lat":  34.8283779, "lng": 113.5400346, "type": "bus_stop" },
-    { "id": "bus_hanlinguojichenshequbeimen_E", "name": "公交站-翰林国际城社区北门-E", "lat":  34.8283779, "lng": 113.5400346, "type": "bus_stop" },
-
-    { "id": "bus_lianhuajiechangchunlu_W", "name": "公交站-莲花街长椿路-W", "lat":  34.8284065, "lng": 113.5347855, "type": "bus_stop" },
-    { "id": "bus_lianhuajiechangchunlu_E", "name": "公交站-莲花街长椿路-E", "lat":  34.8280630, "lng": 113.5373336, "type": "bus_stop" },
-
-    { "id": "bus_lianhuajieshixinzhuang_W", "name": "公交站-莲花街师新庄-W", "lat":  34.8280630, "lng": 113.5309929, "type": "bus_stop" },
-    { "id": "bus_lianhuajieshixinzhuang_E", "name": "公交站-莲花街师新庄-E", "lat":  34.8279133, "lng": 113.5309929, "type": "bus_stop" },
-
-    { "id": "bus_lianhuajiexisihuan_W", "name": "公交站-莲花街西四环-W", "lat":  34.8284814, "lng": 113.5268247, "type": "bus_stop" },
-    { "id": "bus_lianhuajiexisihuan_E", "name": "公交站-莲花街西四环-E", "lat":  34.8280674, "lng": 113.5257840, "type": "bus_stop" },
-    { "id": "bus_xuesonglulianhuajie_N", "name": "公交站-雪松路莲花街-N", "lat":  34.8288248, "lng": 113.5513884, "type": "bus_stop" },
-    { "id": "bus_xuesonglulianhuajie_S", "name": "公交站-雪松路莲花街-S", "lat":  34.8272572, "lng": 113.5511202, "type": "bus_stop" },
-
-    { "id": "bus_xuesonglujinsuolu_N", "name": "公交站-雪松路金梭路-N", "lat":  34.8263721, "lng": 113.5513186, "type": "bus_stop" },
-    { "id": "bus_xuesonglujinsuolu_S", "name": "公交站-雪松路金梭路-S", "lat":  34.8252161, "lng": 113.5511309, "type": "bus_stop" },
-
-    { "id": "bus_xuesongluyinpinglu_N", "name": "公交站-雪松路银屏路-N", "lat":  34.8239848, "lng": 113.5513240, "type": "bus_stop" },
-    { "id": "bus_xuesongluyinpinglu_S", "name": "公交站-雪松路银屏路-S", "lat":  34.8239749, "lng": 113.5511369, "type": "bus_stop" },
-
-    { "id": "bus_xuesongluxueli_N", "name": "公交站-雪松路北里-N", "lat":  34.8211218, "lng": 113.5513602, "type": "bus_stop" },
-    { "id": "bus_xuesongluxueli_S", "name": "公交站-雪松路北里-S", "lat":  34.8212803, "lng": 113.5511523, "type": "bus_stop" },
-
-    { "id": "bus_xuesongcuizhujie_N", "name": "公交站-雪松路翠竹街-N", "lat":  34.8187315, "lng": 113.5502230, "type": "bus_stop" },
-    { "id": "bus_kexuedadaoxuesonglu_W", "name": "公交站-科学大道雪松路-W", "lat":  34.8090114, "lng": 113.5489261, "type": "bus_stop" },
-    { "id": "bus_kexuedadaoxuesonglu_E", "name": "公交站-科学大道雪松路-E", "lat":  34.8085709, "lng": 113.5511363, "type": "bus_stop" },
-
-    { "id": "bus_shinanlugongjiaozhan_W", "name": "公交站-石楠路公交站-W", "lat":   34.8089717, "lng":  113.5446131, "type": "bus_stop" },
-    { "id": "bus_shinanlugongjiaozhan_E", "name": "公交站-石楠路公交站-E", "lat":  34.8086149, "lng": 113.5445273, "type": "bus_stop" },
-
-    { "id": "bus_kexuedadaochuntenglu_W", "name": "公交站-科学大道春藤路-W", "lat":  34.8089805, "lng":  113.5416412, "type": "bus_stop" },
-    { "id": "bus_kexuedadaochuntenglu_E", "name": "公交站-科学大道春藤路-E", "lat":  34.8086326, "lng":  113.5406220, "type": "bus_stop" }
+    {
+      "id": "haut_gate_s",
+      "name": "河南工业大学莲花街校区-南门",
+      "lat": 34.8282524,
+      "lng": 113.545281,
+      "type": "landmark"
+    },
+    {
+      "id": "haut_gate_e",
+      "name": "河南工业大学莲花街校区-东门",
+      "lat": 34.8309869,
+      "lng": 113.5511068,
+      "type": "landmark"
+    },
+    {
+      "id": "haut_gate_w",
+      "name": "河南工业大学莲花街校区-西门",
+      "lat": 34.8318896,
+      "lng": 113.5363922,
+      "type": "landmark"
+    },
+    {
+      "id": "zzu_gate_n",
+      "name": "郑州大学-北门",
+      "lat": 34.8281335,
+      "lng": 113.5301185,
+      "type": "landmark"
+    },
+    {
+      "id": "zzu_gate_e",
+      "name": "郑州大学-东门",
+      "lat": 34.8180291,
+      "lng": 113.5355365,
+      "type": "landmark"
+    },
+    {
+      "id": "zzu_gate_s",
+      "name": "郑州大学-南门",
+      "lat": 34.8089211,
+      "lng": 113.529354,
+      "type": "landmark"
+    },
+    {
+      "id": "cross_lianhua_xuesong",
+      "name": "路口-莲花街/雪松路",
+      "lat": 34.8281599,
+      "lng": 113.5511041,
+      "type": "road_node"
+    },
+    {
+      "id": "cross_lianhua_changchun",
+      "name": "路口-莲花街/长椿路",
+      "lat": 34.828252,
+      "lng": 113.536245,
+      "type": "road_node"
+    },
+    {
+      "id": "cross_lianhua_xisihuan",
+      "name": "路口-莲花街/西四环",
+      "lat": 34.8281951,
+      "lng": 113.5247701,
+      "type": "road_node"
+    },
+    {
+      "id": "cross_yingchun_xuesong",
+      "name": "路口-迎春街/雪松路",
+      "lat": 34.8204843,
+      "lng": 113.5511845,
+      "type": "road_node"
+    },
+    {
+      "id": "cross_cuizhu_xuesong",
+      "name": "路口-翠竹街/雪松路",
+      "lat": 34.818104,
+      "lng": 113.5497147,
+      "type": "road_node"
+    },
+    {
+      "id": "cross_cuizhu_shinan",
+      "name": "路口-翠竹街/石楠路",
+      "lat": 34.8180929,
+      "lng": 113.5452998,
+      "type": "road_node"
+    },
+    {
+      "id": "cross_kexuedadao_xisihuan",
+      "name": "路口-科学大道/西四环",
+      "lat": 34.8089497,
+      "lng": 113.5229194,
+      "type": "road_node"
+    },
+    {
+      "id": "cross_kexuedadao_changchun",
+      "name": "路口-科学大道/长椿路",
+      "lat": 34.8089849,
+      "lng": 113.5348392,
+      "type": "road_node"
+    },
+    {
+      "id": "cross_kexuedadao_xuesong",
+      "name": "路口-科学大道/雪松路",
+      "lat": 34.808895,
+      "lng": 113.549653,
+      "type": "road_node"
+    },
+    {
+      "id": "cross_kexuedadao_shinan",
+      "name": "路口-科学大道/石楠路",
+      "lat": 34.8089233,
+      "lng": 113.5453212,
+      "type": "road_node"
+    },
+    {
+      "id": "sub_haut",
+      "name": "地铁站-河南工业大学",
+      "lat": 34.8289019,
+      "lng": 113.5365316,
+      "type": "subway_entrance"
+    },
+    {
+      "id": "sub_zzuscipark",
+      "name": "地铁站-郑大科技园",
+      "lat": 34.818269,
+      "lng": 113.536454,
+      "type": "subway_entrance"
+    },
+    {
+      "id": "sub_zzu",
+      "name": "地铁站-郑州大学站",
+      "lat": 34.8091567,
+      "lng": 113.5345307,
+      "type": "subway_entrance"
+    },
+    {
+      "id": "bus_dongshimashequbeimen_W",
+      "name": "公交站-东史马社区北门-W",
+      "lat": 34.8317399,
+      "lng": 113.5530031,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_dongshimashequbeimen_E",
+      "name": "公交站-东史马社区北门-E",
+      "lat": 34.8315814,
+      "lng": 113.5532954,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_daxiexincun_N",
+      "name": "公交站-大榭新村站-N",
+      "lat": 34.831445,
+      "lng": 113.536505,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_daxiexincun_S",
+      "name": "公交站-大榭新村站-S",
+      "lat": 34.830049,
+      "lng": 113.5360086,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_qianhewanxiangcheng_N",
+      "name": "公交站-谦祥万和城站-N",
+      "lat": 34.834201,
+      "lng": 113.536607,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_qianhewanxiangcheng_S",
+      "name": "公交站-谦祥万和城站-S",
+      "lat": 34.834148,
+      "lng": 113.536041,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_changcunlulianhuajie_S",
+      "name": "公交站-长椿路莲花街站-S",
+      "lat": 34.8273178,
+      "lng": 113.53579,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_changcunlujinjujie_N",
+      "name": "公交站-长椿路金菊街站-N",
+      "lat": 34.8229163,
+      "lng": 113.5361534,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_changcunlujinjujie_S",
+      "name": "公交站-长椿路金菊街站-S",
+      "lat": 34.8228734,
+      "lng": 113.5357216,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_changcuilucuizhujie_N",
+      "name": "公交站-长翠路翠竹街站-N",
+      "lat": 34.8191449,
+      "lng": 113.5359972,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_changcuilucuizhujie_S",
+      "name": "公交站-长翠路翠竹街站-S",
+      "lat": 34.8169347,
+      "lng": 113.5353407,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_changcunlufengyangjie_N",
+      "name": "公交站-长椿路枫杨街站-N",
+      "lat": 34.815979,
+      "lng": 113.535853,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_changcunlufengyangjie_S",
+      "name": "公交站-长椿路枫杨街站-S",
+      "lat": 34.814072,
+      "lng": 113.535247,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_changcunlukexuedadao_N",
+      "name": "公交站-长椿路科学大道-N",
+      "lat": 34.8098218,
+      "lng": 113.5355848,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_changcunlukexuedadao_S",
+      "name": "公交站-长椿路科学大道-S",
+      "lat": 34.807668,
+      "lng": 113.5349223,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_lianhuajiexuesonglu_W",
+      "name": "公交站-莲花街雪松路站-W",
+      "lat": 34.8281566,
+      "lng": 113.550164,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_lianhuajiexuesonglu_E",
+      "name": "公交站-莲花街雪松路站-E",
+      "lat": 34.8279133,
+      "lng": 113.5504174,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_henangongyedaxuezhan_W",
+      "name": "公交站-河南工业大学站-W",
+      "lat": 34.8281841,
+      "lng": 113.5444736,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_henangongyedaxuezhan_E",
+      "name": "公交站-河南工业大学站-E",
+      "lat": 34.8280625,
+      "lng": 113.5460823,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_hanlinguojichenshequbeimen_W",
+      "name": "公交站-翰林国际城社区北门-W",
+      "lat": 34.8283779,
+      "lng": 113.5400346,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_hanlinguojichenshequbeimen_E",
+      "name": "公交站-翰林国际城社区北门-E",
+      "lat": 34.8283779,
+      "lng": 113.5400346,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_lianhuajiechangchunlu_W",
+      "name": "公交站-莲花街长椿路-W",
+      "lat": 34.8284065,
+      "lng": 113.5347855,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_lianhuajiechangchunlu_E",
+      "name": "公交站-莲花街长椿路-E",
+      "lat": 34.828063,
+      "lng": 113.5373336,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_lianhuajieshixinzhuang_W",
+      "name": "公交站-莲花街师新庄-W",
+      "lat": 34.828063,
+      "lng": 113.5309929,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_lianhuajieshixinzhuang_E",
+      "name": "公交站-莲花街师新庄-E",
+      "lat": 34.8279133,
+      "lng": 113.5309929,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_lianhuajiexisihuan_W",
+      "name": "公交站-莲花街西四环-W",
+      "lat": 34.8284814,
+      "lng": 113.5268247,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_lianhuajiexisihuan_E",
+      "name": "公交站-莲花街西四环-E",
+      "lat": 34.8280674,
+      "lng": 113.525784,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_xuesonglulianhuajie_N",
+      "name": "公交站-雪松路莲花街-N",
+      "lat": 34.8288248,
+      "lng": 113.5513884,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_xuesonglulianhuajie_S",
+      "name": "公交站-雪松路莲花街-S",
+      "lat": 34.8272572,
+      "lng": 113.5511202,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_xuesonglujinsuolu_N",
+      "name": "公交站-雪松路金梭路-N",
+      "lat": 34.8263721,
+      "lng": 113.5513186,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_xuesonglujinsuolu_S",
+      "name": "公交站-雪松路金梭路-S",
+      "lat": 34.8252161,
+      "lng": 113.5511309,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_xuesongluyinpinglu_N",
+      "name": "公交站-雪松路银屏路-N",
+      "lat": 34.8239848,
+      "lng": 113.551324,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_xuesongluyinpinglu_S",
+      "name": "公交站-雪松路银屏路-S",
+      "lat": 34.8239749,
+      "lng": 113.5511369,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_xuesongluxueli_N",
+      "name": "公交站-雪松路北里-N",
+      "lat": 34.8211218,
+      "lng": 113.5513602,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_xuesongluxueli_S",
+      "name": "公交站-雪松路北里-S",
+      "lat": 34.8212803,
+      "lng": 113.5511523,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_xuesongcuizhujie_N",
+      "name": "公交站-雪松路翠竹街-N",
+      "lat": 34.8187315,
+      "lng": 113.550223,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_kexuedadaoxuesonglu_W",
+      "name": "公交站-科学大道雪松路-W",
+      "lat": 34.8090114,
+      "lng": 113.5489261,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_kexuedadaoxuesonglu_E",
+      "name": "公交站-科学大道雪松路-E",
+      "lat": 34.8085709,
+      "lng": 113.5511363,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_shinanlugongjiaozhan_W",
+      "name": "公交站-石楠路公交站-W",
+      "lat": 34.8089717,
+      "lng": 113.5446131,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_shinanlugongjiaozhan_E",
+      "name": "公交站-石楠路公交站-E",
+      "lat": 34.8086149,
+      "lng": 113.5445273,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_kexuedadaochuntenglu_W",
+      "name": "公交站-科学大道春藤路-W",
+      "lat": 34.8089805,
+      "lng": 113.5416412,
+      "type": "bus_stop"
+    },
+    {
+      "id": "bus_kexuedadaochuntenglu_E",
+      "name": "公交站-科学大道春藤路-E",
+      "lat": 34.8086326,
+      "lng": 113.540622,
+      "type": "bus_stop"
+    }
   ],
   "edges": [
     {
       "_comment": "========== 1. 地铁线路 (轨道交通 - 双向) ==========",
-      "note": "严格遵循更新后的ID: sub_haut <-> sub_zzuscipark <-> sub_zzu",
-
-      "from": "sub_haut", "to": "sub_zzuscipark",
-      "dist": 1183.5, "modes": ["subway"], "line_id": "METRO_Line_1", "desc": "1号线: 河南工业大学 -> 郑大科技园"
+      "note": "严格遵循更新后的ID: sub_haut \u003c-\u003e sub_zzuscipark \u003c-\u003e sub_zzu",
+      "from": "sub_haut",
+      "to": "sub_zzuscipark",
+      "dist": 1183.5,
+      "modes": [
+        "subway"
+      ],
+      "line_id": "METRO_Line_1",
+      "desc": "1号线: 河南工业大学 -\u003e 郑大科技园"
     },
     {
-      "from": "sub_zzuscipark", "to": "sub_haut",
-      "dist": 1183.5, "modes": ["subway"], "line_id": "METRO_Line_1", "desc": "1号线: 郑大科技园 -> 河南工业大学"
+      "from": "sub_zzuscipark",
+      "to": "sub_haut",
+      "dist": 1183.5,
+      "modes": [
+        "subway"
+      ],
+      "line_id": "METRO_Line_1",
+      "desc": "1号线: 郑大科技园 -\u003e 河南工业大学"
     },
     {
-      "from": "sub_zzuscipark", "to": "sub_zzu",
-      "dist": 1029.0, "modes": ["subway"], "line_id": "METRO_Line_1", "desc": "1号线: 郑大科技园 -> 郑州大学站"
+      "from": "sub_zzuscipark",
+      "to": "sub_zzu",
+      "dist": 1029,
+      "modes": [
+        "subway"
+      ],
+      "line_id": "METRO_Line_1",
+      "desc": "1号线: 郑大科技园 -\u003e 郑州大学站"
     },
     {
-      "from": "sub_zzu", "to": "sub_zzuscipark",
-      "dist": 1029.0, "modes": ["subway"], "line_id": "METRO_Line_1", "desc": "1号线: 郑州大学站 -> 郑大科技园"
+      "from": "sub_zzu",
+      "to": "sub_zzuscipark",
+      "dist": 1029,
+      "modes": [
+        "subway"
+      ],
+      "line_id": "METRO_Line_1",
+      "desc": "1号线: 郑州大学站 -\u003e 郑大科技园"
     },
-
     {
       "_comment": "========== 2. 公交线路: 长椿路 (南北向 - 单向) ==========",
       "note": "北行(_N)连北行; 南行(_S)连南行",
-
-      "from": "bus_changcunlukexuedadao_N", "to": "bus_changcunlufengyangjie_N", "dist": 685.2, "modes": ["bus"], "line_id": "BUS_Changchun_N"
+      "from": "bus_changcunlukexuedadao_N",
+      "to": "bus_changcunlufengyangjie_N",
+      "dist": 685.2,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Changchun_N"
     },
     {
-      "from": "bus_changcunlufengyangjie_N", "to": "bus_changcuilucuizhujie_N", "dist": 352.5, "modes": ["bus"], "line_id": "BUS_Changchun_N"
+      "from": "bus_changcunlufengyangjie_N",
+      "to": "bus_changcuilucuizhujie_N",
+      "dist": 352.5,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Changchun_N"
     },
     {
-      "from": "bus_changcuilucuizhujie_N", "to": "bus_changcunlujinjujie_N", "dist": 420.0, "modes": ["bus"], "line_id": "BUS_Changchun_N"
+      "from": "bus_changcuilucuizhujie_N",
+      "to": "bus_changcunlujinjujie_N",
+      "dist": 420,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Changchun_N"
     },
     {
-      "from": "bus_changcunlujinjujie_N", "to": "bus_daxiexincun_N", "dist": 949.6, "modes": ["bus"], "line_id": "BUS_Changchun_N", "desc": "长椿路北行: 跨越莲花街路口"
+      "from": "bus_changcunlujinjujie_N",
+      "to": "bus_daxiexincun_N",
+      "dist": 949.6,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Changchun_N",
+      "desc": "长椿路北行: 跨越莲花街路口"
     },
     {
-      "from": "bus_daxiexincun_N", "to": "bus_qianhewanxiangcheng_N", "dist": 306.9, "modes": ["bus"], "line_id": "BUS_Changchun_N"
-    },
-
-    {
-      "from": "bus_qianhewanxiangcheng_S", "to": "bus_daxiexincun_S", "dist": 456.2, "modes": ["bus"], "line_id": "BUS_Changchun_S"
-    },
-    {
-      "from": "bus_daxiexincun_S", "to": "bus_changcunlulianhuajie_S", "dist": 304.5, "modes": ["bus"], "line_id": "BUS_Changchun_S"
-    },
-    {
-      "from": "bus_changcunlulianhuajie_S", "to": "bus_changcunlujinjujie_S", "dist": 494.9, "modes": ["bus"], "line_id": "BUS_Changchun_S"
+      "from": "bus_daxiexincun_N",
+      "to": "bus_qianhewanxiangcheng_N",
+      "dist": 306.9,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Changchun_N"
     },
     {
-      "from": "bus_changcunlujinjujie_S", "to": "bus_changcuilucuizhujie_S", "dist": 661.9, "modes": ["bus"], "line_id": "BUS_Changchun_S"
+      "from": "bus_qianhewanxiangcheng_S",
+      "to": "bus_daxiexincun_S",
+      "dist": 456.2,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Changchun_S"
     },
     {
-      "from": "bus_changcuilucuizhujie_S", "to": "bus_changcunlufengyangjie_S", "dist": 318.8, "modes": ["bus"], "line_id": "BUS_Changchun_S"
+      "from": "bus_daxiexincun_S",
+      "to": "bus_changcunlulianhuajie_S",
+      "dist": 304.5,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Changchun_S"
     },
     {
-      "from": "bus_changcunlufengyangjie_S", "to": "bus_changcunlukexuedadao_S", "dist": 713.4, "modes": ["bus"], "line_id": "BUS_Changchun_S"
+      "from": "bus_changcunlulianhuajie_S",
+      "to": "bus_changcunlujinjujie_S",
+      "dist": 494.9,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Changchun_S"
     },
-
+    {
+      "from": "bus_changcunlujinjujie_S",
+      "to": "bus_changcuilucuizhujie_S",
+      "dist": 661.9,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Changchun_S"
+    },
+    {
+      "from": "bus_changcuilucuizhujie_S",
+      "to": "bus_changcunlufengyangjie_S",
+      "dist": 318.8,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Changchun_S"
+    },
+    {
+      "from": "bus_changcunlufengyangjie_S",
+      "to": "bus_changcunlukexuedadao_S",
+      "dist": 713.4,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Changchun_S"
+    },
     {
       "_comment": "========== 3. 公交线路: 莲花街 (东西向 - 单向) ==========",
-
-      "from": "bus_lianhuajiexuesonglu_W", "to": "bus_henangongyedaxuezhan_W", "dist": 634.3, "modes": ["bus"], "line_id": "BUS_Lianhua_W"
+      "from": "bus_lianhuajiexuesonglu_W",
+      "to": "bus_henangongyedaxuezhan_W",
+      "dist": 520,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Lianhua_W"
     },
     {
-      "from": "bus_henangongyedaxuezhan_W", "to": "bus_hanlinguojichenshequbeimen_W", "dist": 407.7, "modes": ["bus"], "line_id": "BUS_Lianhua_W"
+      "from": "bus_henangongyedaxuezhan_W",
+      "to": "bus_hanlinguojichenshequbeimen_W",
+      "dist": 407.7,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Lianhua_W"
     },
     {
-      "from": "bus_hanlinguojichenshequbeimen_W", "to": "bus_lianhuajiechangchunlu_W", "dist": 479.4, "modes": ["bus"], "line_id": "BUS_Lianhua_W"
+      "from": "bus_hanlinguojichenshequbeimen_W",
+      "to": "bus_lianhuajiechangchunlu_W",
+      "dist": 479.4,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Lianhua_W"
     },
     {
-      "from": "bus_lianhuajiechangchunlu_W", "to": "bus_lianhuajieshixinzhuang_W", "dist": 349.5, "modes": ["bus"], "line_id": "BUS_Lianhua_W"
+      "from": "bus_lianhuajiechangchunlu_W",
+      "to": "bus_lianhuajieshixinzhuang_W",
+      "dist": 349.5,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Lianhua_W"
     },
     {
-      "from": "bus_lianhuajieshixinzhuang_W", "to": "bus_lianhuajiexisihuan_W", "dist": 384.9, "modes": ["bus"], "line_id": "BUS_Lianhua_W"
-    },
-
-    {
-      "from": "bus_lianhuajiexisihuan_E", "to": "bus_lianhuajieshixinzhuang_E", "dist": 476.3, "modes": ["bus"], "line_id": "BUS_Lianhua_E"
-    },
-    {
-      "from": "bus_lianhuajieshixinzhuang_E", "to": "bus_lianhuajiechangchunlu_E", "dist": 580.1, "modes": ["bus"], "line_id": "BUS_Lianhua_E"
-    },
-    {
-      "from": "bus_lianhuajiechangchunlu_E", "to": "bus_hanlinguojichenshequbeimen_E", "dist": 249.2, "modes": ["bus"], "line_id": "BUS_Lianhua_E"
+      "from": "bus_lianhuajieshixinzhuang_W",
+      "to": "bus_lianhuajiexisihuan_W",
+      "dist": 384.9,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Lianhua_W"
     },
     {
-      "from": "bus_hanlinguojichenshequbeimen_E", "to": "bus_henangongyedaxuezhan_E", "dist": 554.4, "modes": ["bus"], "line_id": "BUS_Lianhua_E"
+      "from": "bus_lianhuajiexisihuan_E",
+      "to": "bus_lianhuajieshixinzhuang_E",
+      "dist": 476.3,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Lianhua_E"
     },
     {
-      "from": "bus_henangongyedaxuezhan_E", "to": "bus_lianhuajiexuesonglu_E", "dist": 396.7, "modes": ["bus"], "line_id": "BUS_Lianhua_E"
+      "from": "bus_lianhuajieshixinzhuang_E",
+      "to": "bus_lianhuajiechangchunlu_E",
+      "dist": 580.1,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Lianhua_E"
     },
-
+    {
+      "from": "bus_lianhuajiechangchunlu_E",
+      "to": "bus_hanlinguojichenshequbeimen_E",
+      "dist": 249.2,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Lianhua_E"
+    },
+    {
+      "from": "bus_hanlinguojichenshequbeimen_E",
+      "to": "bus_henangongyedaxuezhan_E",
+      "dist": 554.4,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Lianhua_E"
+    },
+    {
+      "from": "bus_henangongyedaxuezhan_E",
+      "to": "bus_lianhuajiexuesonglu_E",
+      "dist": 396.7,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Lianhua_E"
+    },
     {
       "_comment": "========== 4. 公交线路: 雪松路 (南北向 - 单向) ==========",
-
-      "from": "bus_dongshimashequbeimen_E", "to": "bus_xuesonglulianhuajie_N", "dist": 360.0, "modes": ["bus"], "line_id": "BUS_Xuesong_N", "desc": "雪松路南行: 东史马社区北门 -> 莲花街"
+      "from": "bus_dongshimashequbeimen_E",
+      "to": "bus_xuesonglulianhuajie_N",
+      "dist": 360,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Xuesong_N",
+      "desc": "雪松路南行: 东史马社区北门 -\u003e 莲花街"
     },
     {
-      "from": "bus_xuesonglulianhuajie_N", "to": "bus_xuesonglujinsuolu_N", "dist": 273.7, "modes": ["bus"], "line_id": "BUS_Xuesong_N"
+      "from": "bus_xuesonglulianhuajie_N",
+      "to": "bus_xuesonglujinsuolu_N",
+      "dist": 273.7,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Xuesong_N"
     },
     {
-      "from": "bus_xuesonglujinsuolu_N", "to": "bus_xuesongluyinpinglu_N", "dist": 265.8, "modes": ["bus"], "line_id": "BUS_Xuesong_N"
+      "from": "bus_xuesonglujinsuolu_N",
+      "to": "bus_xuesongluyinpinglu_N",
+      "dist": 265.8,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Xuesong_N"
     },
     {
-      "from": "bus_xuesongluyinpinglu_N", "to": "bus_xuesongluxueli_N", "dist": 318.8, "modes": ["bus"], "line_id": "BUS_Xuesong_N"
+      "from": "bus_xuesongluyinpinglu_N",
+      "to": "bus_xuesongluxueli_N",
+      "dist": 318.8,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Xuesong_N"
     },
     {
-      "from": "bus_xuesongluxueli_N", "to": "bus_xuesongcuizhujie_N", "dist": 286.3, "modes": ["bus"], "line_id": "BUS_Xuesong_N"
-    },
-
-    {
-      "from": "bus_xuesongcuizhujie_N", "to": "bus_xuesongluxueli_S", "dist": 296.8, "modes": ["bus"], "line_id": "BUS_Xuesong_S"
-    },
-    {
-      "from": "bus_xuesongcuizhujie_N", "to": "cross_cuizhu_xuesong", "dist": 80.0, "modes": ["walk"], "desc": "雪松路翠竹街公交站 -> 翠竹街/雪松路口"
-    },
-    {
-      "from": "cross_cuizhu_xuesong", "to": "bus_xuesongcuizhujie_N", "dist": 80.0, "modes": ["walk"], "desc": "翠竹街/雪松路口 -> 雪松路翠竹街公交站"
+      "from": "bus_xuesongluxueli_N",
+      "to": "bus_xuesongcuizhujie_N",
+      "dist": 286.3,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Xuesong_N"
     },
     {
-      "from": "bus_xuesongluxueli_S", "to": "bus_xuesongluyinpinglu_S", "dist": 300.1, "modes": ["bus"], "line_id": "BUS_Xuesong_S"
+      "from": "bus_xuesongcuizhujie_N",
+      "to": "bus_xuesongluxueli_S",
+      "dist": 296.8,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Xuesong_S"
     },
     {
-      "from": "bus_xuesongluyinpinglu_S", "to": "bus_xuesonglujinsuolu_S", "dist": 138.3, "modes": ["bus"], "line_id": "BUS_Xuesong_S"
+      "from": "bus_xuesongcuizhujie_N",
+      "to": "cross_cuizhu_xuesong",
+      "dist": 80,
+      "modes": [
+        "walk"
+      ],
+      "desc": "雪松路翠竹街公交站 -\u003e 翠竹街/雪松路口"
     },
     {
-      "from": "bus_xuesonglujinsuolu_S", "to": "bus_xuesonglulianhuajie_S", "dist": 227.2, "modes": ["bus"], "line_id": "BUS_Xuesong_S"
+      "from": "cross_cuizhu_xuesong",
+      "to": "bus_xuesongcuizhujie_N",
+      "dist": 80,
+      "modes": [
+        "walk"
+      ],
+      "desc": "翠竹街/雪松路口 -\u003e 雪松路翠竹街公交站"
     },
     {
-      "from": "bus_xuesonglulianhuajie_S", "to": "bus_dongshimashequbeimen_W", "dist": 360.0, "modes": ["bus"], "line_id": "BUS_Xuesong_S", "desc": "雪松路北行: 莲花街 -> 东史马社区北门"
+      "from": "bus_xuesongluxueli_S",
+      "to": "bus_xuesongluyinpinglu_S",
+      "dist": 300.1,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Xuesong_S"
     },
-
+    {
+      "from": "bus_xuesongluyinpinglu_S",
+      "to": "bus_xuesonglujinsuolu_S",
+      "dist": 138.3,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Xuesong_S"
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_S",
+      "to": "bus_xuesonglulianhuajie_S",
+      "dist": 227.2,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Xuesong_S"
+    },
+    {
+      "from": "bus_xuesonglulianhuajie_S",
+      "to": "bus_dongshimashequbeimen_W",
+      "dist": 527.8,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Xuesong_S",
+      "desc": "雪松路北行: 莲花街 -\u003e 东史马社区北门"
+    },
     {
       "_comment": "========== 5. 公交线路: 科学大道 (东西向 - 单向) ==========",
-
-      "from": "bus_kexuedadaoxuesonglu_W", "to": "bus_changcunlukexuedadao_S", "dist": 1289.4, "modes": ["bus"], "line_id": "BUS_Kexue_W"
+      "from": "bus_kexuedadaoxuesonglu_W",
+      "to": "bus_changcunlukexuedadao_S",
+      "dist": 1289.4,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Kexue_W"
     },
     {
-      "from": "bus_changcunlukexuedadao_S", "to": "bus_shinanlugongjiaozhan_W", "dist": 898.8, "modes": ["bus"], "line_id": "BUS_Kexue_W"
+      "from": "bus_changcunlukexuedadao_S",
+      "to": "bus_shinanlugongjiaozhan_W",
+      "dist": 898.8,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Kexue_W"
     },
     {
-      "from": "bus_shinanlugongjiaozhan_W", "to": "bus_kexuedadaochuntenglu_W", "dist": 271.7, "modes": ["bus"], "line_id": "BUS_Kexue_W"
+      "from": "bus_shinanlugongjiaozhan_W",
+      "to": "bus_kexuedadaochuntenglu_W",
+      "dist": 271.7,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Kexue_W"
     },
-
     {
-      "from": "bus_kexuedadaochuntenglu_E", "to": "bus_shinanlugongjiaozhan_E", "dist": 357.3, "modes": ["bus"], "line_id": "BUS_Kexue_E"
+      "from": "bus_kexuedadaochuntenglu_E",
+      "to": "bus_shinanlugongjiaozhan_E",
+      "dist": 357.3,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Kexue_E"
     },
     {
-      "from": "bus_shinanlugongjiaozhan_E", "to": "bus_changcunlukexuedadao_N", "dist": 829.4, "modes": ["bus"], "line_id": "BUS_Kexue_E"
+      "from": "bus_shinanlugongjiaozhan_E",
+      "to": "bus_changcunlukexuedadao_N",
+      "dist": 829.4,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Kexue_E"
     },
     {
-      "from": "bus_changcunlukexuedadao_N", "to": "bus_kexuedadaoxuesonglu_E", "dist": 1428.5, "modes": ["bus"], "line_id": "BUS_Kexue_E"
+      "from": "bus_changcunlukexuedadao_N",
+      "to": "bus_kexuedadaoxuesonglu_E",
+      "dist": 1428.5,
+      "modes": [
+        "bus"
+      ],
+      "line_id": "BUS_Kexue_E"
     },
-
     {
       "_comment": "========== 6. 普通道路路网 (混合模式 - 双向) ==========",
       "note": "普通道路 Car/Bike/Walk 可通行",
-
-      "from": "cross_lianhua_xisihuan", "to": "cross_lianhua_changchun", "dist": 1047.8, "modes": ["car","bike","walk"]
+      "from": "cross_lianhua_xisihuan",
+      "to": "cross_lianhua_changchun",
+      "dist": 1047.8,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ]
     },
     {
-      "from": "cross_lianhua_changchun", "to": "cross_lianhua_xisihuan", "dist": 1047.8, "modes": ["car","bike","walk"]
-    },
-
-    {
-      "from": "cross_lianhua_changchun", "to": "cross_lianhua_xuesong", "dist": 1356.5, "modes": ["car","bike","walk"]
-    },
-    {
-      "from": "cross_lianhua_xuesong", "to": "cross_lianhua_changchun", "dist": 1356.5, "modes": ["car","bike","walk"]
-    },
-
-    {
-      "from": "cross_lianhua_changchun", "to": "cross_kexuedadao_changchun", "dist": 2143.2, "modes": ["car","bike","walk"]
+      "from": "cross_lianhua_changchun",
+      "to": "cross_lianhua_xisihuan",
+      "dist": 1047.8,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ]
     },
     {
-      "from": "cross_kexuedadao_changchun", "to": "cross_lianhua_changchun", "dist": 2143.2, "modes": ["car","bike","walk"]
-    },
-
-    {
-      "from": "cross_kexuedadao_xisihuan", "to": "cross_kexuedadao_changchun", "dist": 1088.3, "modes": ["car","bike","walk"]
-    },
-    {
-      "from": "cross_kexuedadao_changchun", "to": "cross_kexuedadao_xisihuan", "dist": 1088.3, "modes": ["car","bike","walk"]
-    },
-
-    {
-      "from": "cross_lianhua_xisihuan", "to": "cross_kexuedadao_xisihuan", "dist": 2135.8, "modes": ["car","bike","walk"], "desc": "西四环: 莲花街 -> 科学大道"
+      "from": "cross_lianhua_changchun",
+      "to": "cross_lianhua_xuesong",
+      "dist": 1356.5,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ]
     },
     {
-      "from": "cross_kexuedadao_xisihuan", "to": "cross_lianhua_xisihuan", "dist": 2135.8, "modes": ["car","bike","walk"], "desc": "西四环: 科学大道 -> 莲花街"
-    },
-
-    {
-      "from": "cross_kexuedadao_changchun", "to": "cross_kexuedadao_xuesong", "dist": 1353.4, "modes": ["car","bike","walk"]
-    },
-    {
-      "from": "cross_kexuedadao_xuesong", "to": "cross_kexuedadao_changchun", "dist": 1353.4, "modes": ["car","bike","walk"]
-    },
-
-    {
-      "from": "cross_cuizhu_shinan", "to": "cross_cuizhu_xuesong", "dist": 403.7, "modes": ["car","bike","walk"]
+      "from": "cross_lianhua_xuesong",
+      "to": "cross_lianhua_changchun",
+      "dist": 1356.5,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ]
     },
     {
-      "from": "cross_cuizhu_xuesong", "to": "cross_cuizhu_shinan", "dist": 403.7, "modes": ["car","bike","walk"]
-    },
-
-    {
-      "from": "cross_yingchun_xuesong", "to": "cross_cuizhu_xuesong", "dist": 298.6, "modes": ["car","bike","walk"]
-    },
-    {
-      "from": "cross_cuizhu_xuesong", "to": "cross_yingchun_xuesong", "dist": 298.6, "modes": ["car","bike","walk"]
-    },
-
-    {
-      "from": "cross_lianhua_xuesong", "to": "cross_yingchun_xuesong", "dist": 854.2, "modes": ["car","bike","walk"], "desc": "雪松路: 莲花街 -> 迎春街"
+      "from": "cross_lianhua_changchun",
+      "to": "cross_kexuedadao_changchun",
+      "dist": 2143.2,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ]
     },
     {
-      "from": "cross_yingchun_xuesong", "to": "cross_lianhua_xuesong", "dist": 854.2, "modes": ["car","bike","walk"], "desc": "雪松路: 迎春街 -> 莲花街"
-    },
-
-    {
-      "_comment": "========== 7. 接驳层 ==========",
-      "note": "连接 地标 -> 最近的路口节点 (支持步行/骑行/驾车)",
-
-      "from": "haut_gate_s", "to": "cross_lianhua_changchun", "dist": 825.1, "modes": ["walk", "bike", "car"], "desc": "河工大南门 -> 莲花街路口"
-    },
-    {
-      "from": "haut_gate_s", "to": "bus_henangongyedaxuezhan_W", "dist": 73.9, "modes": ["walk"], "desc": "河工大南门 -> 公交站(西)"
-    },
-
-    {
-      "from": "sub_haut", "to": "cross_lianhua_changchun", "dist": 77.2, "modes": ["walk", "bike", "car"], "desc": "地铁河工大 -> 莲花街路口"
+      "from": "cross_kexuedadao_changchun",
+      "to": "cross_lianhua_changchun",
+      "dist": 2143.2,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ]
     },
     {
-      "from": "sub_haut", "to": "bus_henangongyedaxuezhan_E", "dist": 262.5, "modes": ["walk"], "desc": "地铁河工大 -> 公交站(东)"
-    },
-
-    {
-      "from": "sub_zzuscipark", "to": "bus_changcuilucuizhujie_N", "dist": 105.2, "modes": ["walk"], "desc": "地铁郑大科技园 -> 长翠路公交站(北)"
-    },
-    {
-      "from": "sub_zzuscipark", "to": "bus_changcuilucuizhujie_S", "dist": 180.5, "modes": ["walk"], "desc": "地铁郑大科技园 -> 长翠路公交站(南)"
-    },
-
-    {
-      "from": "sub_zzu", "to": "cross_kexuedadao_changchun", "dist": 33.7, "modes": ["walk", "bike", "car"], "desc": "地铁郑州大学站 -> 科学大道长椿路口"
-    },
-
-    {
-      "from": "zzu_gate_n", "to": "cross_lianhua_changchun", "dist": 560.4, "modes": ["walk", "bike", "car"], "desc": "郑大北门 -> 莲花街长椿路口"
+      "from": "cross_kexuedadao_xisihuan",
+      "to": "cross_kexuedadao_changchun",
+      "dist": 1088.3,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ]
     },
     {
-      "from": "zzu_gate_e", "to": "cross_cuizhu_shinan", "dist": 891.0, "modes": ["walk", "bike", "car"], "desc": "郑大东门 -> 翠竹街石楠路口"
+      "from": "cross_kexuedadao_changchun",
+      "to": "cross_kexuedadao_xisihuan",
+      "dist": 1088.3,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ]
     },
     {
-      "from": "zzu_gate_s", "to": "cross_kexuedadao_xisihuan", "dist": 588.5, "modes": ["walk", "bike", "car"], "desc": "郑大南门 -> 科学大道西四环路口"
+      "from": "cross_lianhua_xisihuan",
+      "to": "cross_kexuedadao_xisihuan",
+      "dist": 2135.8,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ],
+      "desc": "西四环: 莲花街 -\u003e 科学大道"
     },
     {
-      "from": "zzu_gate_s", "to": "cross_kexuedadao_changchun", "dist": 500.0, "modes": ["walk", "bike", "car"], "desc": "郑大南门 -> 科学大道长椿路口"
-    },
-
-    {
-      "_comment": "========== 8. 公交站步行接驳 ==========",
-      "from": "cross_kexuedadao_xuesong", "to": "bus_kexuedadaoxuesonglu_W", "dist": 50.0, "modes": ["walk"], "desc": "科学大道/雪松路口 -> 公交站"
-    },
-    {
-      "from": "cross_kexuedadao_xuesong", "to": "bus_kexuedadaoxuesonglu_E", "dist": 50.0, "modes": ["walk"], "desc": "科学大道/雪松路口 -> 公交站"
-    },
-    {
-      "from": "cross_lianhua_xuesong", "to": "bus_lianhuajiexuesonglu_W", "dist": 50.0, "modes": ["walk"], "desc": "莲花街/雪松路口 -> 公交站"
+      "from": "cross_kexuedadao_xisihuan",
+      "to": "cross_lianhua_xisihuan",
+      "dist": 2135.8,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ],
+      "desc": "西四环: 科学大道 -\u003e 莲花街"
     },
     {
-      "from": "cross_lianhua_xuesong", "to": "bus_lianhuajiexuesonglu_E", "dist": 50.0, "modes": ["walk"], "desc": "莲花街/雪松路口 -> 公交站"
+      "from": "cross_kexuedadao_changchun",
+      "to": "cross_kexuedadao_xuesong",
+      "dist": 1353.4,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ]
     },
     {
-      "from": "cross_lianhua_xuesong", "to": "bus_xuesonglulianhuajie_N", "dist": 80.0, "modes": ["walk"], "desc": "莲花街/雪松路口 -> 雪松路公交站(N)"
+      "from": "cross_kexuedadao_xuesong",
+      "to": "cross_kexuedadao_changchun",
+      "dist": 1353.4,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ]
     },
     {
-      "from": "cross_lianhua_xuesong", "to": "bus_xuesonglulianhuajie_S", "dist": 100.0, "modes": ["walk"], "desc": "莲花街/雪松路口 -> 雪松路公交站(S)"
+      "from": "cross_cuizhu_shinan",
+      "to": "cross_cuizhu_xuesong",
+      "dist": 403.7,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ]
     },
     {
-      "from": "bus_xuesonglulianhuajie_N", "to": "cross_lianhua_xuesong", "dist": 80.0, "modes": ["walk"], "desc": "雪松路公交站(N) -> 莲花街/雪松路口"
+      "from": "cross_cuizhu_xuesong",
+      "to": "cross_cuizhu_shinan",
+      "dist": 403.7,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ]
     },
     {
-      "from": "bus_xuesonglulianhuajie_S", "to": "cross_lianhua_xuesong", "dist": 100.0, "modes": ["walk"], "desc": "雪松路公交站(S) -> 莲花街/雪松路口"
+      "from": "cross_yingchun_xuesong",
+      "to": "cross_cuizhu_xuesong",
+      "dist": 298.6,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ]
     },
     {
-      "from": "cross_lianhua_changchun", "to": "bus_lianhuajiechangchunlu_W", "dist": 50.0, "modes": ["walk"], "desc": "莲花街/长椿路口 -> 公交站"
+      "from": "cross_cuizhu_xuesong",
+      "to": "cross_yingchun_xuesong",
+      "dist": 298.6,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ]
     },
     {
-      "from": "cross_lianhua_changchun", "to": "bus_lianhuajiechangchunlu_E", "dist": 50.0, "modes": ["walk"], "desc": "莲花街/长椿路口 -> 公交站"
+      "from": "cross_lianhua_xuesong",
+      "to": "cross_yingchun_xuesong",
+      "dist": 854.2,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ],
+      "desc": "雪松路: 莲花街 -\u003e 迎春街"
     },
     {
-      "from": "cross_kexuedadao_changchun", "to": "bus_changcunlukexuedadao_N", "dist": 50.0, "modes": ["walk"], "desc": "科学大道/长椿路口 -> 公交站"
+      "from": "cross_yingchun_xuesong",
+      "to": "cross_lianhua_xuesong",
+      "dist": 854.2,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ],
+      "desc": "雪松路: 迎春街 -\u003e 莲花街"
     },
     {
-      "from": "cross_kexuedadao_changchun", "to": "bus_changcunlukexuedadao_S", "dist": 50.0, "modes": ["walk"], "desc": "科学大道/长椿路口 -> 公交站"
+      "_comment": "========== 7. 完整接驳层 - 地标到路口/地铁/公交 (双向) =========="
     },
     {
-      "from": "cross_lianhua_xisihuan", "to": "bus_lianhuajiexisihuan_W", "dist": 50.0, "modes": ["walk"], "desc": "莲花街/西四环路口 -> 公交站"
+      "from": "haut_gate_s",
+      "to": "cross_lianhua_changchun",
+      "dist": 825,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ],
+      "desc": "河工大南门 \u003c-\u003e 莲花街/长椿路口"
     },
     {
-      "from": "cross_lianhua_xisihuan", "to": "bus_lianhuajiexisihuan_E", "dist": 50.0, "modes": ["walk"], "desc": "莲花街/西四环路口 -> 公交站"
-    },
-
-    {
-      "_comment": "========== 9. 工大东门/西门接驳 ==========",
-      "from": "haut_gate_e", "to": "cross_lianhua_xuesong", "dist": 314.0, "modes": ["walk", "bike", "car"], "desc": "工大东门 -> 莲花街/雪松路口"
-    },
-    {
-      "from": "cross_lianhua_xuesong", "to": "haut_gate_e", "dist": 314.0, "modes": ["walk", "bike", "car"], "desc": "莲花街/雪松路口 -> 工大东门"
-    },
-    {
-      "from": "haut_gate_e", "to": "bus_dongshimashequbeimen_W", "dist": 120.0, "modes": ["walk"], "desc": "工大东门 -> 东史马社区北门公交站(W)"
+      "from": "cross_lianhua_changchun",
+      "to": "haut_gate_s",
+      "dist": 825,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ]
     },
     {
-      "from": "haut_gate_e", "to": "bus_dongshimashequbeimen_E", "dist": 120.0, "modes": ["walk"], "desc": "工大东门 -> 东史马社区北门公交站(E)"
+      "from": "haut_gate_s",
+      "to": "cross_lianhua_xuesong",
+      "dist": 532,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ],
+      "desc": "河工大南门 \u003c-\u003e 莲花街/雪松路口"
     },
     {
-      "from": "bus_dongshimashequbeimen_W", "to": "haut_gate_e", "dist": 120.0, "modes": ["walk"], "desc": "东史马社区北门公交站(W) -> 工大东门"
+      "from": "cross_lianhua_xuesong",
+      "to": "haut_gate_s",
+      "dist": 532,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ]
     },
     {
-      "from": "bus_dongshimashequbeimen_E", "to": "haut_gate_e", "dist": 120.0, "modes": ["walk"], "desc": "东史马社区北门公交站(E) -> 工大东门"
+      "from": "haut_gate_s",
+      "to": "sub_haut",
+      "dist": 800,
+      "modes": [
+        "walk",
+        "bike"
+      ],
+      "desc": "河工大南门 \u003c-\u003e 地铁河工大"
     },
     {
-      "from": "haut_gate_w", "to": "cross_lianhua_changchun", "dist": 403.0, "modes": ["walk", "bike", "car"], "desc": "工大西门 -> 莲花街/长椿路口"
+      "from": "sub_haut",
+      "to": "haut_gate_s",
+      "dist": 800,
+      "modes": [
+        "walk",
+        "bike"
+      ]
     },
     {
-      "from": "cross_lianhua_changchun", "to": "haut_gate_w", "dist": 403.0, "modes": ["walk", "bike", "car"], "desc": "莲花街/长椿路口 -> 工大西门"
+      "from": "haut_gate_s",
+      "to": "bus_henangongyedaxuezhan_W",
+      "dist": 74,
+      "modes": [
+        "walk"
+      ],
+      "desc": "河工大南门 \u003c-\u003e 河南工业大学公交站(W)"
     },
     {
-      "from": "cross_lianhua_changchun", "to": "zzu_gate_n", "dist": 560.4, "modes": ["walk", "bike", "car"], "desc": "莲花街长椿路口 -> 郑大北门"
+      "from": "bus_henangongyedaxuezhan_W",
+      "to": "haut_gate_s",
+      "dist": 74,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "haut_gate_s",
+      "to": "bus_henangongyedaxuezhan_E",
+      "dist": 76.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "河工大南门 \u003c-\u003e 河南工业大学公交站(E)"
+    },
+    {
+      "from": "bus_henangongyedaxuezhan_E",
+      "to": "haut_gate_s",
+      "dist": 76.2,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "haut_gate_s",
+      "to": "bus_hanlinguojichenshequbeimen_W",
+      "dist": 480,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_hanlinguojichenshequbeimen_W",
+      "to": "haut_gate_s",
+      "dist": 480,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "haut_gate_s",
+      "to": "bus_hanlinguojichenshequbeimen_E",
+      "dist": 480,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_hanlinguojichenshequbeimen_E",
+      "to": "haut_gate_s",
+      "dist": 480,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "haut_gate_s",
+      "to": "bus_lianhuajiexuesonglu_W",
+      "dist": 450,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_W",
+      "to": "haut_gate_s",
+      "dist": 450,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "haut_gate_s",
+      "to": "bus_lianhuajiexuesonglu_E",
+      "dist": 470,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_E",
+      "to": "haut_gate_s",
+      "dist": 470,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "haut_gate_e",
+      "to": "cross_lianhua_xuesong",
+      "dist": 314,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ],
+      "desc": "河工大东门 \u003c-\u003e 莲花街/雪松路口"
+    },
+    {
+      "from": "cross_lianhua_xuesong",
+      "to": "haut_gate_e",
+      "dist": 314,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ]
+    },
+    {
+      "from": "haut_gate_e",
+      "to": "bus_dongshimashequbeimen_W",
+      "dist": 192.5,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_dongshimashequbeimen_W",
+      "to": "haut_gate_e",
+      "dist": 192.5,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "haut_gate_e",
+      "to": "bus_dongshimashequbeimen_E",
+      "dist": 210.6,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_dongshimashequbeimen_E",
+      "to": "haut_gate_e",
+      "dist": 210.6,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "haut_gate_e",
+      "to": "bus_lianhuajiexuesonglu_W",
+      "dist": 326.6,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_W",
+      "to": "haut_gate_e",
+      "dist": 326.6,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "haut_gate_e",
+      "to": "bus_lianhuajiexuesonglu_E",
+      "dist": 347.9,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_E",
+      "to": "haut_gate_e",
+      "dist": 347.9,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "haut_gate_e",
+      "to": "bus_xuesonglulianhuajie_N",
+      "dist": 242.1,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_xuesonglulianhuajie_N",
+      "to": "haut_gate_e",
+      "dist": 242.1,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "haut_gate_e",
+      "to": "bus_xuesonglulianhuajie_S",
+      "dist": 415.2,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_xuesonglulianhuajie_S",
+      "to": "haut_gate_e",
+      "dist": 415.2,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "haut_gate_w",
+      "to": "cross_lianhua_changchun",
+      "dist": 403,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ],
+      "desc": "河工大西门 \u003c-\u003e 莲花街/长椿路口"
+    },
+    {
+      "from": "cross_lianhua_changchun",
+      "to": "haut_gate_w",
+      "dist": 403,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ]
+    },
+    {
+      "from": "haut_gate_w",
+      "to": "sub_haut",
+      "dist": 332,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ],
+      "desc": "河工大西门 \u003c-\u003e 地铁河工大"
+    },
+    {
+      "from": "sub_haut",
+      "to": "haut_gate_w",
+      "dist": 332,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ]
+    },
+    {
+      "from": "haut_gate_w",
+      "to": "bus_daxiexincun_N",
+      "dist": 50.6,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_daxiexincun_N",
+      "to": "haut_gate_w",
+      "dist": 50.6,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "haut_gate_w",
+      "to": "bus_daxiexincun_S",
+      "dist": 200,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_daxiexincun_S",
+      "to": "haut_gate_w",
+      "dist": 200,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "haut_gate_w",
+      "to": "bus_lianhuajiechangchunlu_W",
+      "dist": 414.6,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_lianhuajiechangchunlu_W",
+      "to": "haut_gate_w",
+      "dist": 414.6,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "haut_gate_w",
+      "to": "bus_lianhuajiechangchunlu_E",
+      "dist": 434.6,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_lianhuajiechangchunlu_E",
+      "to": "haut_gate_w",
+      "dist": 434.6,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "haut_gate_w",
+      "to": "bus_qianhewanxiangcheng_N",
+      "dist": 260,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_qianhewanxiangcheng_N",
+      "to": "haut_gate_w",
+      "dist": 260,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "haut_gate_w",
+      "to": "bus_qianhewanxiangcheng_S",
+      "dist": 260,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_qianhewanxiangcheng_S",
+      "to": "haut_gate_w",
+      "dist": 260,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "zzu_gate_n",
+      "to": "cross_lianhua_changchun",
+      "dist": 560,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ],
+      "desc": "郑大北门 \u003c-\u003e 莲花街/长椿路口"
+    },
+    {
+      "from": "cross_lianhua_changchun",
+      "to": "zzu_gate_n",
+      "dist": 560,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ]
+    },
+    {
+      "from": "zzu_gate_n",
+      "to": "cross_lianhua_xisihuan",
+      "dist": 490,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ],
+      "desc": "郑大北门 \u003c-\u003e 莲花街/西四环路口"
+    },
+    {
+      "from": "cross_lianhua_xisihuan",
+      "to": "zzu_gate_n",
+      "dist": 490,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ]
+    },
+    {
+      "from": "zzu_gate_n",
+      "to": "bus_lianhuajiechangchunlu_W",
+      "dist": 427.5,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_lianhuajiechangchunlu_W",
+      "to": "zzu_gate_n",
+      "dist": 427.5,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "zzu_gate_n",
+      "to": "bus_lianhuajiechangchunlu_E",
+      "dist": 659.4,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_lianhuajiechangchunlu_E",
+      "to": "zzu_gate_n",
+      "dist": 659.4,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "zzu_gate_n",
+      "to": "bus_lianhuajieshixinzhuang_W",
+      "dist": 80.3,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_lianhuajieshixinzhuang_W",
+      "to": "zzu_gate_n",
+      "dist": 80.3,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "zzu_gate_n",
+      "to": "bus_lianhuajieshixinzhuang_E",
+      "dist": 83.6,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_lianhuajieshixinzhuang_E",
+      "to": "zzu_gate_n",
+      "dist": 83.6,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "zzu_gate_n",
+      "to": "bus_lianhuajiexisihuan_W",
+      "dist": 300,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_lianhuajiexisihuan_W",
+      "to": "zzu_gate_n",
+      "dist": 300,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "zzu_gate_n",
+      "to": "bus_lianhuajiexisihuan_E",
+      "dist": 396.1,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_lianhuajiexisihuan_E",
+      "to": "zzu_gate_n",
+      "dist": 396.1,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "zzu_gate_e",
+      "to": "cross_cuizhu_shinan",
+      "dist": 891,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ],
+      "desc": "郑大东门 \u003c-\u003e 翠竹街/石楠路口"
+    },
+    {
+      "from": "cross_cuizhu_shinan",
+      "to": "zzu_gate_e",
+      "dist": 891,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ]
+    },
+    {
+      "from": "zzu_gate_e",
+      "to": "cross_cuizhu_xuesong",
+      "dist": 1295.8,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ],
+      "desc": "郑大东门 \u003c-\u003e 翠竹街/雪松路口"
+    },
+    {
+      "from": "cross_cuizhu_xuesong",
+      "to": "zzu_gate_e",
+      "dist": 1295.8,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ]
+    },
+    {
+      "from": "zzu_gate_e",
+      "to": "sub_zzuscipark",
+      "dist": 88,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ],
+      "desc": "郑大东门 \u003c-\u003e 地铁郑大科技园"
+    },
+    {
+      "from": "sub_zzuscipark",
+      "to": "zzu_gate_e",
+      "dist": 88,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ]
+    },
+    {
+      "from": "zzu_gate_e",
+      "to": "bus_changcuilucuizhujie_N",
+      "dist": 130,
+      "modes": [
+        "walk"
+      ],
+      "desc": "郑大东门 \u003c-\u003e 长翠路翠竹街公交站(N)"
+    },
+    {
+      "from": "bus_changcuilucuizhujie_N",
+      "to": "zzu_gate_e",
+      "dist": 130,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "zzu_gate_e",
+      "to": "bus_changcuilucuizhujie_S",
+      "dist": 123.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "郑大东门 \u003c-\u003e 长翠路翠竹街公交站(S)"
+    },
+    {
+      "from": "bus_changcuilucuizhujie_S",
+      "to": "zzu_gate_e",
+      "dist": 123.1,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "zzu_gate_e",
+      "to": "bus_changcunlujinjujie_N",
+      "dist": 550,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_changcunlujinjujie_N",
+      "to": "zzu_gate_e",
+      "dist": 550,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "zzu_gate_e",
+      "to": "bus_changcunlujinjujie_S",
+      "dist": 550,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_changcunlujinjujie_S",
+      "to": "zzu_gate_e",
+      "dist": 550,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "zzu_gate_e",
+      "to": "bus_xuesongcuizhujie_N",
+      "dist": 1344.5,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_xuesongcuizhujie_N",
+      "to": "zzu_gate_e",
+      "dist": 1344.5,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "zzu_gate_e",
+      "to": "bus_xuesongluxueli_N",
+      "dist": 1486.5,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_xuesongluxueli_N",
+      "to": "zzu_gate_e",
+      "dist": 1486.5,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "zzu_gate_e",
+      "to": "bus_xuesongluxueli_S",
+      "dist": 1472.3,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_xuesongluxueli_S",
+      "to": "zzu_gate_e",
+      "dist": 1472.3,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "zzu_gate_s",
+      "to": "cross_kexuedadao_xisihuan",
+      "dist": 589,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ],
+      "desc": "郑大南门 \u003c-\u003e 科学大道/西四环路口"
+    },
+    {
+      "from": "cross_kexuedadao_xisihuan",
+      "to": "zzu_gate_s",
+      "dist": 589,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ]
+    },
+    {
+      "from": "zzu_gate_s",
+      "to": "cross_kexuedadao_changchun",
+      "dist": 500,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ],
+      "desc": "郑大南门 \u003c-\u003e 科学大道/长椿路口"
+    },
+    {
+      "from": "cross_kexuedadao_changchun",
+      "to": "zzu_gate_s",
+      "dist": 500,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ]
+    },
+    {
+      "from": "zzu_gate_s",
+      "to": "sub_zzu",
+      "dist": 480,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ],
+      "desc": "郑大南门 \u003c-\u003e 地铁郑州大学站"
+    },
+    {
+      "from": "sub_zzu",
+      "to": "zzu_gate_s",
+      "dist": 480,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ]
+    },
+    {
+      "from": "zzu_gate_s",
+      "to": "bus_changcunlukexuedadao_N",
+      "dist": 578.3,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_changcunlukexuedadao_N",
+      "to": "zzu_gate_s",
+      "dist": 578.3,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "zzu_gate_s",
+      "to": "bus_changcunlukexuedadao_S",
+      "dist": 527.7,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_changcunlukexuedadao_S",
+      "to": "zzu_gate_s",
+      "dist": 527.7,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "_comment": "========== 8. 地铁站完整接驳 (双向) =========="
+    },
+    {
+      "from": "sub_haut",
+      "to": "cross_lianhua_changchun",
+      "dist": 77,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ],
+      "desc": "地铁河工大 \u003c-\u003e 莲花街/长椿路口"
+    },
+    {
+      "from": "cross_lianhua_changchun",
+      "to": "sub_haut",
+      "dist": 77,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ]
+    },
+    {
+      "from": "sub_haut",
+      "to": "bus_henangongyedaxuezhan_E",
+      "dist": 877.7,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_henangongyedaxuezhan_E",
+      "to": "sub_haut",
+      "dist": 877.7,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "sub_haut",
+      "to": "bus_henangongyedaxuezhan_W",
+      "dist": 730.1,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_henangongyedaxuezhan_W",
+      "to": "sub_haut",
+      "dist": 730.1,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "sub_haut",
+      "to": "bus_lianhuajiechangchunlu_W",
+      "dist": 165,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_lianhuajiechangchunlu_W",
+      "to": "sub_haut",
+      "dist": 165,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "sub_haut",
+      "to": "bus_lianhuajiechangchunlu_E",
+      "dist": 110,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_lianhuajiechangchunlu_E",
+      "to": "sub_haut",
+      "dist": 110,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "sub_haut",
+      "to": "bus_daxiexincun_N",
+      "dist": 280,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_daxiexincun_N",
+      "to": "sub_haut",
+      "dist": 280,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "sub_haut",
+      "to": "bus_daxiexincun_S",
+      "dist": 133,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_daxiexincun_S",
+      "to": "sub_haut",
+      "dist": 133,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "sub_zzuscipark",
+      "to": "cross_cuizhu_xuesong",
+      "dist": 1212,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ],
+      "desc": "地铁郑大科技园 \u003c-\u003e 翠竹街/雪松路口"
+    },
+    {
+      "from": "cross_cuizhu_xuesong",
+      "to": "sub_zzuscipark",
+      "dist": 1212,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ]
+    },
+    {
+      "from": "sub_zzuscipark",
+      "to": "cross_cuizhu_shinan",
+      "dist": 804,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ],
+      "desc": "地铁郑大科技园 \u003c-\u003e 翠竹街/石楠路口"
+    },
+    {
+      "from": "cross_cuizhu_shinan",
+      "to": "sub_zzuscipark",
+      "dist": 804,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ]
+    },
+    {
+      "from": "sub_zzuscipark",
+      "to": "bus_changcuilucuizhujie_N",
+      "dist": 105,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_changcuilucuizhujie_N",
+      "to": "sub_zzuscipark",
+      "dist": 105,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "sub_zzuscipark",
+      "to": "bus_changcuilucuizhujie_S",
+      "dist": 181,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_changcuilucuizhujie_S",
+      "to": "sub_zzuscipark",
+      "dist": 181,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "sub_zzuscipark",
+      "to": "bus_changcunlujinjujie_N",
+      "dist": 520,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_changcunlujinjujie_N",
+      "to": "sub_zzuscipark",
+      "dist": 520,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "sub_zzuscipark",
+      "to": "bus_changcunlujinjujie_S",
+      "dist": 520,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_changcunlujinjujie_S",
+      "to": "sub_zzuscipark",
+      "dist": 520,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "sub_zzuscipark",
+      "to": "bus_changcunlufengyangjie_N",
+      "dist": 260,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_changcunlufengyangjie_N",
+      "to": "sub_zzuscipark",
+      "dist": 260,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "sub_zzuscipark",
+      "to": "bus_changcunlufengyangjie_S",
+      "dist": 470,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_changcunlufengyangjie_S",
+      "to": "sub_zzuscipark",
+      "dist": 470,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "sub_zzu",
+      "to": "cross_kexuedadao_changchun",
+      "dist": 34,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ],
+      "desc": "地铁郑州大学站 \u003c-\u003e 科学大道/长椿路口"
+    },
+    {
+      "from": "cross_kexuedadao_changchun",
+      "to": "sub_zzu",
+      "dist": 34,
+      "modes": [
+        "walk",
+        "bike",
+        "car"
+      ]
+    },
+    {
+      "from": "sub_zzu",
+      "to": "bus_changcunlukexuedadao_N",
+      "dist": 121.5,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_changcunlukexuedadao_N",
+      "to": "sub_zzu",
+      "dist": 121.5,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "sub_zzu",
+      "to": "bus_changcunlukexuedadao_S",
+      "dist": 169.5,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_changcunlukexuedadao_S",
+      "to": "sub_zzu",
+      "dist": 169.5,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "sub_zzu",
+      "to": "bus_kexuedadaochuntenglu_W",
+      "dist": 650,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_kexuedadaochuntenglu_W",
+      "to": "sub_zzu",
+      "dist": 650,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "sub_zzu",
+      "to": "bus_kexuedadaochuntenglu_E",
+      "dist": 560,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_kexuedadaochuntenglu_E",
+      "to": "sub_zzu",
+      "dist": 560,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "_comment": "========== 9. 路口到公交站完整接驳 (双向) =========="
+    },
+    {
+      "from": "cross_lianhua_xuesong",
+      "to": "bus_lianhuajiexuesonglu_W",
+      "dist": 85.9,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_W",
+      "to": "cross_lianhua_xuesong",
+      "dist": 85.9,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_lianhua_xuesong",
+      "to": "bus_lianhuajiexuesonglu_E",
+      "dist": 68.5,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_E",
+      "to": "cross_lianhua_xuesong",
+      "dist": 68.5,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_lianhua_xuesong",
+      "to": "bus_xuesonglulianhuajie_N",
+      "dist": 80,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_xuesonglulianhuajie_N",
+      "to": "cross_lianhua_xuesong",
+      "dist": 80,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_lianhua_xuesong",
+      "to": "bus_xuesonglulianhuajie_S",
+      "dist": 100,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_xuesonglulianhuajie_S",
+      "to": "cross_lianhua_xuesong",
+      "dist": 100,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_lianhua_xuesong",
+      "to": "bus_xuesonglujinsuolu_N",
+      "dist": 200,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_N",
+      "to": "cross_lianhua_xuesong",
+      "dist": 200,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_lianhua_xuesong",
+      "to": "bus_xuesonglujinsuolu_S",
+      "dist": 330,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_S",
+      "to": "cross_lianhua_xuesong",
+      "dist": 330,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_lianhua_changchun",
+      "to": "bus_lianhuajiechangchunlu_W",
+      "dist": 134.5,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_lianhuajiechangchunlu_W",
+      "to": "cross_lianhua_changchun",
+      "dist": 134.5,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_lianhua_changchun",
+      "to": "bus_lianhuajiechangchunlu_E",
+      "dist": 101.7,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_lianhuajiechangchunlu_E",
+      "to": "cross_lianhua_changchun",
+      "dist": 101.7,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_lianhua_changchun",
+      "to": "bus_changcunlulianhuajie_S",
+      "dist": 120,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_changcunlulianhuajie_S",
+      "to": "cross_lianhua_changchun",
+      "dist": 120,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_lianhua_changchun",
+      "to": "bus_daxiexincun_N",
+      "dist": 350,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_daxiexincun_N",
+      "to": "cross_lianhua_changchun",
+      "dist": 350,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_lianhua_changchun",
+      "to": "bus_daxiexincun_S",
+      "dist": 200,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_daxiexincun_S",
+      "to": "cross_lianhua_changchun",
+      "dist": 200,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_lianhua_changchun",
+      "to": "bus_qianhewanxiangcheng_N",
+      "dist": 660,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_qianhewanxiangcheng_N",
+      "to": "cross_lianhua_changchun",
+      "dist": 660,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_lianhua_changchun",
+      "to": "bus_qianhewanxiangcheng_S",
+      "dist": 660,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_qianhewanxiangcheng_S",
+      "to": "cross_lianhua_changchun",
+      "dist": 660,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_lianhua_changchun",
+      "to": "bus_hanlinguojichenshequbeimen_W",
+      "dist": 350,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_hanlinguojichenshequbeimen_W",
+      "to": "cross_lianhua_changchun",
+      "dist": 350,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_lianhua_changchun",
+      "to": "bus_hanlinguojichenshequbeimen_E",
+      "dist": 350,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_hanlinguojichenshequbeimen_E",
+      "to": "cross_lianhua_changchun",
+      "dist": 350,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_lianhua_xisihuan",
+      "to": "bus_lianhuajiexisihuan_W",
+      "dist": 190.4,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_lianhuajiexisihuan_W",
+      "to": "cross_lianhua_xisihuan",
+      "dist": 190.4,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_lianhua_xisihuan",
+      "to": "bus_lianhuajiexisihuan_E",
+      "dist": 93.7,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_lianhuajiexisihuan_E",
+      "to": "cross_lianhua_xisihuan",
+      "dist": 93.7,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_lianhua_xisihuan",
+      "to": "bus_lianhuajieshixinzhuang_W",
+      "dist": 568.8,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_lianhuajieshixinzhuang_W",
+      "to": "cross_lianhua_xisihuan",
+      "dist": 568.8,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_lianhua_xisihuan",
+      "to": "bus_lianhuajieshixinzhuang_E",
+      "dist": 569.5,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_lianhuajieshixinzhuang_E",
+      "to": "cross_lianhua_xisihuan",
+      "dist": 569.5,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_yingchun_xuesong",
+      "to": "bus_xuesongluyinpinglu_N",
+      "dist": 389.9,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_N",
+      "to": "cross_yingchun_xuesong",
+      "dist": 389.9,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_yingchun_xuesong",
+      "to": "bus_xuesongluyinpinglu_S",
+      "dist": 388.6,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_S",
+      "to": "cross_yingchun_xuesong",
+      "dist": 388.6,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_yingchun_xuesong",
+      "to": "bus_xuesongluxueli_N",
+      "dist": 80,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_xuesongluxueli_N",
+      "to": "cross_yingchun_xuesong",
+      "dist": 80,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_yingchun_xuesong",
+      "to": "bus_xuesongluxueli_S",
+      "dist": 88.7,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_xuesongluxueli_S",
+      "to": "cross_yingchun_xuesong",
+      "dist": 88.7,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_yingchun_xuesong",
+      "to": "bus_xuesonglujinsuolu_N",
+      "dist": 660,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_N",
+      "to": "cross_yingchun_xuesong",
+      "dist": 660,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_yingchun_xuesong",
+      "to": "bus_xuesonglujinsuolu_S",
+      "dist": 580,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_S",
+      "to": "cross_yingchun_xuesong",
+      "dist": 580,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_cuizhu_xuesong",
+      "to": "bus_xuesongcuizhujie_N",
+      "dist": 80,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_xuesongcuizhujie_N",
+      "to": "cross_cuizhu_xuesong",
+      "dist": 80,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_cuizhu_xuesong",
+      "to": "bus_xuesongluxueli_N",
+      "dist": 350,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_xuesongluxueli_N",
+      "to": "cross_cuizhu_xuesong",
+      "dist": 350,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_cuizhu_xuesong",
+      "to": "bus_xuesongluxueli_S",
+      "dist": 350,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_xuesongluxueli_S",
+      "to": "cross_cuizhu_xuesong",
+      "dist": 350,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_cuizhu_shinan",
+      "to": "bus_shinanlugongjiaozhan_W",
+      "dist": 1017.3,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_shinanlugongjiaozhan_W",
+      "to": "cross_cuizhu_shinan",
+      "dist": 1017.3,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_cuizhu_shinan",
+      "to": "bus_shinanlugongjiaozhan_E",
+      "dist": 1057.4,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_shinanlugongjiaozhan_E",
+      "to": "cross_cuizhu_shinan",
+      "dist": 1057.4,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_kexuedadao_xuesong",
+      "to": "bus_kexuedadaoxuesonglu_W",
+      "dist": 67.7,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_kexuedadaoxuesonglu_W",
+      "to": "cross_kexuedadao_xuesong",
+      "dist": 67.7,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_kexuedadao_xuesong",
+      "to": "bus_kexuedadaoxuesonglu_E",
+      "dist": 140.3,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_kexuedadaoxuesonglu_E",
+      "to": "cross_kexuedadao_xuesong",
+      "dist": 140.3,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_kexuedadao_shinan",
+      "to": "bus_shinanlugongjiaozhan_W",
+      "dist": 64.9,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_shinanlugongjiaozhan_W",
+      "to": "cross_kexuedadao_shinan",
+      "dist": 64.9,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_kexuedadao_shinan",
+      "to": "bus_shinanlugongjiaozhan_E",
+      "dist": 80.3,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_shinanlugongjiaozhan_E",
+      "to": "cross_kexuedadao_shinan",
+      "dist": 80.3,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_kexuedadao_shinan",
+      "to": "bus_kexuedadaochuntenglu_W",
+      "dist": 336.4,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_kexuedadaochuntenglu_W",
+      "to": "cross_kexuedadao_shinan",
+      "dist": 336.4,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_kexuedadao_shinan",
+      "to": "bus_kexuedadaochuntenglu_E",
+      "dist": 430.7,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_kexuedadaochuntenglu_E",
+      "to": "cross_kexuedadao_shinan",
+      "dist": 430.7,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_kexuedadao_changchun",
+      "to": "bus_changcunlukexuedadao_N",
+      "dist": 115.4,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_changcunlukexuedadao_N",
+      "to": "cross_kexuedadao_changchun",
+      "dist": 115.4,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_kexuedadao_changchun",
+      "to": "bus_changcunlukexuedadao_S",
+      "dist": 146.8,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_changcunlukexuedadao_S",
+      "to": "cross_kexuedadao_changchun",
+      "dist": 146.8,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_kexuedadao_changchun",
+      "to": "bus_kexuedadaochuntenglu_W",
+      "dist": 621.7,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_kexuedadaochuntenglu_W",
+      "to": "cross_kexuedadao_changchun",
+      "dist": 621.7,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_kexuedadao_changchun",
+      "to": "bus_kexuedadaochuntenglu_E",
+      "dist": 530,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "from": "bus_kexuedadaochuntenglu_E",
+      "to": "cross_kexuedadao_changchun",
+      "dist": 530,
+      "modes": [
+        "walk"
+      ]
+    },
+    {
+      "_comment": "========== 10. 补充道路连接 =========="
+    },
+    {
+      "from": "cross_cuizhu_xuesong",
+      "to": "cross_kexuedadao_xuesong",
+      "dist": 1024,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_kexuedadao_xuesong",
+      "to": "cross_cuizhu_xuesong",
+      "dist": 1024,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_kexuedadao_changchun",
+      "to": "cross_kexuedadao_shinan",
+      "dist": 958,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_kexuedadao_shinan",
+      "to": "cross_kexuedadao_changchun",
+      "dist": 958,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_kexuedadao_shinan",
+      "to": "cross_kexuedadao_xuesong",
+      "dist": 396,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_kexuedadao_xuesong",
+      "to": "cross_kexuedadao_shinan",
+      "dist": 396,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_cuizhu_shinan",
+      "to": "cross_kexuedadao_shinan",
+      "dist": 1020,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ]
+    },
+    {
+      "from": "cross_kexuedadao_shinan",
+      "to": "cross_cuizhu_shinan",
+      "dist": 1020,
+      "modes": [
+        "car",
+        "bike",
+        "walk"
+      ]
+    },
+    {
+      "_comment": "========== 11. 校内路径 (双向) =========="
+    },
+    {
+      "from": "haut_gate_s",
+      "to": "haut_gate_e",
+      "dist": 680,
+      "modes": [
+        "walk",
+        "bike"
+      ],
+      "desc": "河工大南门 \u003c-\u003e 东门(校内)"
+    },
+    {
+      "from": "haut_gate_e",
+      "to": "haut_gate_s",
+      "dist": 680,
+      "modes": [
+        "walk",
+        "bike"
+      ]
+    },
+    {
+      "from": "haut_gate_s",
+      "to": "haut_gate_w",
+      "dist": 907.6,
+      "modes": [
+        "walk",
+        "bike"
+      ],
+      "desc": "河工大南门 \u003c-\u003e 西门(校内)"
+    },
+    {
+      "from": "haut_gate_w",
+      "to": "haut_gate_s",
+      "dist": 907.6,
+      "modes": [
+        "walk",
+        "bike"
+      ]
+    },
+    {
+      "from": "haut_gate_e",
+      "to": "haut_gate_w",
+      "dist": 1350,
+      "modes": [
+        "walk",
+        "bike"
+      ],
+      "desc": "河工大东门 \u003c-\u003e 西门(校内)"
+    },
+    {
+      "from": "haut_gate_w",
+      "to": "haut_gate_e",
+      "dist": 1350,
+      "modes": [
+        "walk",
+        "bike"
+      ]
+    },
+    {
+      "from": "zzu_gate_n",
+      "to": "zzu_gate_e",
+      "dist": 1200,
+      "modes": [
+        "walk",
+        "bike"
+      ],
+      "desc": "郑大北门 \u003c-\u003e 东门(校内)"
+    },
+    {
+      "from": "zzu_gate_e",
+      "to": "zzu_gate_n",
+      "dist": 1200,
+      "modes": [
+        "walk",
+        "bike"
+      ]
+    },
+    {
+      "from": "zzu_gate_n",
+      "to": "zzu_gate_s",
+      "dist": 2200,
+      "modes": [
+        "walk",
+        "bike"
+      ],
+      "desc": "郑大北门 \u003c-\u003e 南门(校内)"
+    },
+    {
+      "from": "zzu_gate_s",
+      "to": "zzu_gate_n",
+      "dist": 2200,
+      "modes": [
+        "walk",
+        "bike"
+      ]
+    },
+    {
+      "from": "zzu_gate_e",
+      "to": "zzu_gate_s",
+      "dist": 1100,
+      "modes": [
+        "walk",
+        "bike"
+      ],
+      "desc": "郑大东门 \u003c-\u003e 南门(校内)"
+    },
+    {
+      "from": "zzu_gate_s",
+      "to": "zzu_gate_e",
+      "dist": 1100,
+      "modes": [
+        "walk",
+        "bike"
+      ]
+    },
+    {
+      "from": "bus_shinanlugongjiaozhan_W",
+      "to": "bus_shinanlugongjiaozhan_E",
+      "dist": 40.5,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-石楠路公交站-W -\u003e 公交站-石楠路公交站-E"
+    },
+    {
+      "from": "bus_shinanlugongjiaozhan_E",
+      "to": "bus_shinanlugongjiaozhan_W",
+      "dist": 40.5,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-石楠路公交站-E -\u003e 公交站-石楠路公交站-W"
+    },
+    {
+      "from": "bus_daxiexincun_N",
+      "to": "bus_daxiexincun_S",
+      "dist": 161.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-大榭新村站-N -\u003e 公交站-大榭新村站-S"
+    },
+    {
+      "from": "bus_daxiexincun_S",
+      "to": "bus_daxiexincun_N",
+      "dist": 161.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-大榭新村站-S -\u003e 公交站-大榭新村站-N"
+    },
+    {
+      "from": "bus_changcuilucuizhujie_N",
+      "to": "bus_changcuilucuizhujie_S",
+      "dist": 253.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-长翠路翠竹街站-N -\u003e 公交站-长翠路翠竹街站-S"
+    },
+    {
+      "from": "bus_changcuilucuizhujie_S",
+      "to": "bus_changcuilucuizhujie_N",
+      "dist": 253.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-长翠路翠竹街站-S -\u003e 公交站-长翠路翠竹街站-N"
+    },
+    {
+      "from": "bus_changcunlukexuedadao_N",
+      "to": "bus_changcunlukexuedadao_S",
+      "dist": 247.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-长椿路科学大道-N -\u003e 公交站-长椿路科学大道-S"
+    },
+    {
+      "from": "bus_changcunlukexuedadao_S",
+      "to": "bus_changcunlukexuedadao_N",
+      "dist": 247.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-长椿路科学大道-S -\u003e 公交站-长椿路科学大道-N"
+    },
+    {
+      "from": "bus_lianhuajiechangchunlu_W",
+      "to": "bus_lianhuajiechangchunlu_E",
+      "dist": 236,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-莲花街长椿路-W -\u003e 公交站-莲花街长椿路-E"
+    },
+    {
+      "from": "bus_lianhuajiechangchunlu_E",
+      "to": "bus_lianhuajiechangchunlu_W",
+      "dist": 236,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-莲花街长椿路-E -\u003e 公交站-莲花街长椿路-W"
+    },
+    {
+      "from": "bus_kexuedadaochuntenglu_W",
+      "to": "bus_kexuedadaochuntenglu_E",
+      "dist": 100.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-科学大道春藤路-W -\u003e 公交站-科学大道春藤路-E"
+    },
+    {
+      "from": "bus_kexuedadaochuntenglu_E",
+      "to": "bus_kexuedadaochuntenglu_W",
+      "dist": 100.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-科学大道春藤路-E -\u003e 公交站-科学大道春藤路-W"
+    },
+    {
+      "from": "bus_dongshimashequbeimen_W",
+      "to": "bus_dongshimashequbeimen_E",
+      "dist": 32,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-东史马社区北门-W -\u003e 公交站-东史马社区北门-E"
+    },
+    {
+      "from": "bus_dongshimashequbeimen_E",
+      "to": "bus_dongshimashequbeimen_W",
+      "dist": 32,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-东史马社区北门-E -\u003e 公交站-东史马社区北门-W"
+    },
+    {
+      "from": "bus_lianhuajieshixinzhuang_W",
+      "to": "bus_lianhuajieshixinzhuang_E",
+      "dist": 16.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-莲花街师新庄-W -\u003e 公交站-莲花街师新庄-E"
+    },
+    {
+      "from": "bus_lianhuajieshixinzhuang_E",
+      "to": "bus_lianhuajieshixinzhuang_W",
+      "dist": 16.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-莲花街师新庄-E -\u003e 公交站-莲花街师新庄-W"
+    },
+    {
+      "from": "bus_lianhuajiexisihuan_W",
+      "to": "bus_lianhuajiexisihuan_E",
+      "dist": 105.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-莲花街西四环-W -\u003e 公交站-莲花街西四环-E"
+    },
+    {
+      "from": "bus_lianhuajiexisihuan_E",
+      "to": "bus_lianhuajiexisihuan_W",
+      "dist": 105.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-莲花街西四环-E -\u003e 公交站-莲花街西四环-W"
+    },
+    {
+      "from": "bus_xuesongluxueli_S",
+      "to": "bus_xuesongluxueli_N",
+      "dist": 25.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-雪松路北里-S -\u003e 公交站-雪松路北里-N"
+    },
+    {
+      "from": "bus_xuesongluxueli_N",
+      "to": "bus_xuesongluxueli_S",
+      "dist": 25.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-雪松路北里-N -\u003e 公交站-雪松路北里-S"
+    },
+    {
+      "from": "bus_qianhewanxiangcheng_N",
+      "to": "bus_qianhewanxiangcheng_S",
+      "dist": 52.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-谦祥万和城站-N -\u003e 公交站-谦祥万和城站-S"
+    },
+    {
+      "from": "bus_qianhewanxiangcheng_S",
+      "to": "bus_qianhewanxiangcheng_N",
+      "dist": 52.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-谦祥万和城站-S -\u003e 公交站-谦祥万和城站-N"
+    },
+    {
+      "from": "bus_henangongyedaxuezhan_W",
+      "to": "bus_henangongyedaxuezhan_E",
+      "dist": 147.6,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-河南工业大学站-W -\u003e 公交站-河南工业大学站-E"
+    },
+    {
+      "from": "bus_henangongyedaxuezhan_E",
+      "to": "bus_henangongyedaxuezhan_W",
+      "dist": 147.6,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-河南工业大学站-E -\u003e 公交站-河南工业大学站-W"
+    },
+    {
+      "from": "bus_hanlinguojichenshequbeimen_W",
+      "to": "bus_hanlinguojichenshequbeimen_E",
+      "dist": 10,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-翰林国际城社区北门-W -\u003e 公交站-翰林国际城社区北门-E"
+    },
+    {
+      "from": "bus_hanlinguojichenshequbeimen_E",
+      "to": "bus_hanlinguojichenshequbeimen_W",
+      "dist": 10,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-翰林国际城社区北门-E -\u003e 公交站-翰林国际城社区北门-W"
+    },
+    {
+      "from": "bus_xuesonglulianhuajie_N",
+      "to": "bus_xuesonglulianhuajie_S",
+      "dist": 176.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-雪松路莲花街-N -\u003e 公交站-雪松路莲花街-S"
+    },
+    {
+      "from": "bus_xuesonglulianhuajie_S",
+      "to": "bus_xuesonglulianhuajie_N",
+      "dist": 176.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-雪松路莲花街-S -\u003e 公交站-雪松路莲花街-N"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_N",
+      "to": "bus_xuesongluyinpinglu_S",
+      "dist": 17.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-雪松路银屏路-N -\u003e 公交站-雪松路银屏路-S"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_S",
+      "to": "bus_xuesongluyinpinglu_N",
+      "dist": 17.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-雪松路银屏路-S -\u003e 公交站-雪松路银屏路-N"
+    },
+    {
+      "from": "bus_kexuedadaoxuesonglu_W",
+      "to": "bus_kexuedadaoxuesonglu_E",
+      "dist": 207.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-科学大道雪松路-W -\u003e 公交站-科学大道雪松路-E"
+    },
+    {
+      "from": "bus_kexuedadaoxuesonglu_E",
+      "to": "bus_kexuedadaoxuesonglu_W",
+      "dist": 207.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-科学大道雪松路-E -\u003e 公交站-科学大道雪松路-W"
+    },
+    {
+      "from": "bus_changcunlujinjujie_N",
+      "to": "bus_changcunlujinjujie_S",
+      "dist": 39.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-长椿路金菊街站-N -\u003e 公交站-长椿路金菊街站-S"
+    },
+    {
+      "from": "bus_changcunlujinjujie_S",
+      "to": "bus_changcunlujinjujie_N",
+      "dist": 39.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-长椿路金菊街站-S -\u003e 公交站-长椿路金菊街站-N"
+    },
+    {
+      "from": "bus_changcunlufengyangjie_N",
+      "to": "bus_changcunlufengyangjie_S",
+      "dist": 219.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-长椿路枫杨街站-N -\u003e 公交站-长椿路枫杨街站-S"
+    },
+    {
+      "from": "bus_changcunlufengyangjie_S",
+      "to": "bus_changcunlufengyangjie_N",
+      "dist": 219.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-长椿路枫杨街站-S -\u003e 公交站-长椿路枫杨街站-N"
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_W",
+      "to": "bus_lianhuajiexuesonglu_E",
+      "dist": 35.6,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-莲花街雪松路站-W -\u003e 公交站-莲花街雪松路站-E"
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_E",
+      "to": "bus_lianhuajiexuesonglu_W",
+      "dist": 35.6,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-莲花街雪松路站-E -\u003e 公交站-莲花街雪松路站-W"
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_N",
+      "to": "bus_xuesonglujinsuolu_S",
+      "dist": 129.8,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-雪松路金梭路-N -\u003e 公交站-雪松路金梭路-S"
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_S",
+      "to": "bus_xuesonglujinsuolu_N",
+      "dist": 129.8,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站步行接驳: 公交站-雪松路金梭路-S -\u003e 公交站-雪松路金梭路-N"
+    },
+    {
+      "from": "bus_hanlinguojichenshequbeimen_W",
+      "to": "bus_hanlinguojichenshequbeimen_E",
+      "dist": 10,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-翰林国际城社区北门-W -\u003e 公交站-翰林国际城社区北门-E"
+    },
+    {
+      "from": "bus_hanlinguojichenshequbeimen_E",
+      "to": "bus_hanlinguojichenshequbeimen_W",
+      "dist": 10,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-翰林国际城社区北门-E -\u003e 公交站-翰林国际城社区北门-W"
+    },
+    {
+      "from": "bus_lianhuajieshixinzhuang_W",
+      "to": "bus_lianhuajieshixinzhuang_E",
+      "dist": 16.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-莲花街师新庄-W -\u003e 公交站-莲花街师新庄-E"
+    },
+    {
+      "from": "bus_lianhuajieshixinzhuang_E",
+      "to": "bus_lianhuajieshixinzhuang_W",
+      "dist": 16.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-莲花街师新庄-E -\u003e 公交站-莲花街师新庄-W"
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_N",
+      "to": "bus_xuesonglujinsuolu_S",
+      "dist": 129.8,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-雪松路金梭路-N -\u003e 公交站-雪松路金梭路-S"
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_S",
+      "to": "bus_xuesonglujinsuolu_N",
+      "dist": 129.8,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-雪松路金梭路-S -\u003e 公交站-雪松路金梭路-N"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_N",
+      "to": "bus_xuesongluyinpinglu_S",
+      "dist": 17.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-雪松路银屏路-N -\u003e 公交站-雪松路银屏路-S"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_S",
+      "to": "bus_xuesongluyinpinglu_N",
+      "dist": 17.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-雪松路银屏路-S -\u003e 公交站-雪松路银屏路-N"
+    },
+    {
+      "from": "bus_dongshimashequbeimen_W",
+      "to": "bus_dongshimashequbeimen_E",
+      "dist": 32,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-东史马社区北门-W -\u003e 公交站-东史马社区北门-E"
+    },
+    {
+      "from": "bus_dongshimashequbeimen_E",
+      "to": "bus_dongshimashequbeimen_W",
+      "dist": 32,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-东史马社区北门-E -\u003e 公交站-东史马社区北门-W"
+    },
+    {
+      "from": "bus_daxiexincun_N",
+      "to": "bus_daxiexincun_S",
+      "dist": 161.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-大榭新村站-N -\u003e 公交站-大榭新村站-S"
+    },
+    {
+      "from": "bus_daxiexincun_S",
+      "to": "bus_daxiexincun_N",
+      "dist": 161.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-大榭新村站-S -\u003e 公交站-大榭新村站-N"
+    },
+    {
+      "from": "bus_henangongyedaxuezhan_W",
+      "to": "bus_henangongyedaxuezhan_E",
+      "dist": 147.6,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-河南工业大学站-W -\u003e 公交站-河南工业大学站-E"
+    },
+    {
+      "from": "bus_henangongyedaxuezhan_E",
+      "to": "bus_henangongyedaxuezhan_W",
+      "dist": 147.6,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-河南工业大学站-E -\u003e 公交站-河南工业大学站-W"
+    },
+    {
+      "from": "bus_xuesongluxueli_N",
+      "to": "bus_xuesongluxueli_S",
+      "dist": 25.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-雪松路北里-N -\u003e 公交站-雪松路北里-S"
+    },
+    {
+      "from": "bus_xuesongluxueli_S",
+      "to": "bus_xuesongluxueli_N",
+      "dist": 25.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-雪松路北里-S -\u003e 公交站-雪松路北里-N"
+    },
+    {
+      "from": "bus_kexuedadaochuntenglu_W",
+      "to": "bus_kexuedadaochuntenglu_E",
+      "dist": 100.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-科学大道春藤路-W -\u003e 公交站-科学大道春藤路-E"
+    },
+    {
+      "from": "bus_kexuedadaochuntenglu_E",
+      "to": "bus_kexuedadaochuntenglu_W",
+      "dist": 100.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-科学大道春藤路-E -\u003e 公交站-科学大道春藤路-W"
+    },
+    {
+      "from": "bus_changcunlujinjujie_N",
+      "to": "bus_changcunlujinjujie_S",
+      "dist": 39.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-长椿路金菊街站-N -\u003e 公交站-长椿路金菊街站-S"
+    },
+    {
+      "from": "bus_changcunlujinjujie_S",
+      "to": "bus_changcunlujinjujie_N",
+      "dist": 39.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-长椿路金菊街站-S -\u003e 公交站-长椿路金菊街站-N"
+    },
+    {
+      "from": "bus_shinanlugongjiaozhan_W",
+      "to": "bus_shinanlugongjiaozhan_E",
+      "dist": 40.5,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-石楠路公交站-W -\u003e 公交站-石楠路公交站-E"
+    },
+    {
+      "from": "bus_shinanlugongjiaozhan_E",
+      "to": "bus_shinanlugongjiaozhan_W",
+      "dist": 40.5,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-石楠路公交站-E -\u003e 公交站-石楠路公交站-W"
+    },
+    {
+      "from": "bus_qianhewanxiangcheng_N",
+      "to": "bus_qianhewanxiangcheng_S",
+      "dist": 52.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-谦祥万和城站-N -\u003e 公交站-谦祥万和城站-S"
+    },
+    {
+      "from": "bus_qianhewanxiangcheng_S",
+      "to": "bus_qianhewanxiangcheng_N",
+      "dist": 52.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-谦祥万和城站-S -\u003e 公交站-谦祥万和城站-N"
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_W",
+      "to": "bus_lianhuajiexuesonglu_E",
+      "dist": 35.6,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-莲花街雪松路站-W -\u003e 公交站-莲花街雪松路站-E"
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_E",
+      "to": "bus_lianhuajiexuesonglu_W",
+      "dist": 35.6,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-莲花街雪松路站-E -\u003e 公交站-莲花街雪松路站-W"
+    },
+    {
+      "from": "bus_lianhuajiexisihuan_W",
+      "to": "bus_lianhuajiexisihuan_E",
+      "dist": 105.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-莲花街西四环-W -\u003e 公交站-莲花街西四环-E"
+    },
+    {
+      "from": "bus_lianhuajiexisihuan_E",
+      "to": "bus_lianhuajiexisihuan_W",
+      "dist": 105.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-莲花街西四环-E -\u003e 公交站-莲花街西四环-W"
+    },
+    {
+      "from": "bus_xuesonglulianhuajie_N",
+      "to": "bus_xuesonglulianhuajie_S",
+      "dist": 176.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-雪松路莲花街-N -\u003e 公交站-雪松路莲花街-S"
+    },
+    {
+      "from": "bus_xuesonglulianhuajie_S",
+      "to": "bus_xuesonglulianhuajie_N",
+      "dist": 176.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "对向站台步行: 公交站-雪松路莲花街-S -\u003e 公交站-雪松路莲花街-N"
+    },
+    {
+      "from": "bus_changcunlukexuedadao_N",
+      "to": "bus_kexuedadaochuntenglu_W",
+      "dist": 561.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 科学大道"
+    },
+    {
+      "from": "bus_kexuedadaochuntenglu_W",
+      "to": "bus_changcunlukexuedadao_N",
+      "dist": 561.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 科学大道"
+    },
+    {
+      "from": "bus_changcunlukexuedadao_N",
+      "to": "bus_kexuedadaochuntenglu_E",
+      "dist": 479.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 科学大道"
+    },
+    {
+      "from": "bus_kexuedadaochuntenglu_E",
+      "to": "bus_changcunlukexuedadao_N",
+      "dist": 479.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 科学大道"
+    },
+    {
+      "from": "bus_kexuedadaochuntenglu_W",
+      "to": "bus_kexuedadaoxuesonglu_W",
+      "dist": 665.8,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 科学大道"
+    },
+    {
+      "from": "bus_kexuedadaoxuesonglu_W",
+      "to": "bus_kexuedadaochuntenglu_W",
+      "dist": 665.8,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 科学大道"
+    },
+    {
+      "from": "bus_kexuedadaochuntenglu_W",
+      "to": "bus_changcunlukexuedadao_S",
+      "dist": 631.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 科学大道"
+    },
+    {
+      "from": "bus_changcunlukexuedadao_S",
+      "to": "bus_kexuedadaochuntenglu_W",
+      "dist": 631.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 科学大道"
+    },
+    {
+      "from": "bus_kexuedadaoxuesonglu_W",
+      "to": "bus_kexuedadaochuntenglu_E",
+      "dist": 760.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 科学大道"
+    },
+    {
+      "from": "bus_kexuedadaochuntenglu_E",
+      "to": "bus_kexuedadaoxuesonglu_W",
+      "dist": 760.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 科学大道"
+    },
+    {
+      "from": "bus_changcunlukexuedadao_S",
+      "to": "bus_kexuedadaochuntenglu_E",
+      "dist": 531.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 科学大道"
+    },
+    {
+      "from": "bus_kexuedadaochuntenglu_E",
+      "to": "bus_changcunlukexuedadao_S",
+      "dist": 531.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 科学大道"
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_W",
+      "to": "bus_xuesonglulianhuajie_N",
+      "dist": 134.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglulianhuajie_N",
+      "to": "bus_lianhuajiexuesonglu_W",
+      "dist": 134.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_W",
+      "to": "bus_xuesonglulianhuajie_S",
+      "dist": 132.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglulianhuajie_S",
+      "to": "bus_lianhuajiexuesonglu_W",
+      "dist": 132.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_W",
+      "to": "bus_xuesonglujinsuolu_N",
+      "dist": 224.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_N",
+      "to": "bus_lianhuajiexuesonglu_W",
+      "dist": 224.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_W",
+      "to": "bus_xuesonglujinsuolu_S",
+      "dist": 339,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_S",
+      "to": "bus_lianhuajiexuesonglu_W",
+      "dist": 339,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_W",
+      "to": "bus_xuesongluyinpinglu_S",
+      "dist": 473.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_S",
+      "to": "bus_lianhuajiexuesonglu_W",
+      "dist": 473.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_W",
+      "to": "bus_xuesongluyinpinglu_N",
+      "dist": 476.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_N",
+      "to": "bus_lianhuajiexuesonglu_W",
+      "dist": 476.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_W",
+      "to": "bus_xuesongluxueli_S",
+      "dist": 770.8,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluxueli_S",
+      "to": "bus_lianhuajiexuesonglu_W",
+      "dist": 770.8,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_W",
+      "to": "bus_xuesongluxueli_N",
+      "dist": 790.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluxueli_N",
+      "to": "bus_lianhuajiexuesonglu_W",
+      "dist": 790.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_E",
+      "to": "bus_xuesonglulianhuajie_N",
+      "dist": 134.8,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglulianhuajie_N",
+      "to": "bus_lianhuajiexuesonglu_E",
+      "dist": 134.8,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_E",
+      "to": "bus_xuesonglulianhuajie_S",
+      "dist": 97.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglulianhuajie_S",
+      "to": "bus_lianhuajiexuesonglu_E",
+      "dist": 97.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_E",
+      "to": "bus_xuesonglujinsuolu_N",
+      "dist": 190.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_N",
+      "to": "bus_lianhuajiexuesonglu_E",
+      "dist": 190.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_E",
+      "to": "bus_xuesonglujinsuolu_S",
+      "dist": 307.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_S",
+      "to": "bus_lianhuajiexuesonglu_E",
+      "dist": 307.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_E",
+      "to": "bus_xuesongluyinpinglu_S",
+      "dist": 443.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_S",
+      "to": "bus_lianhuajiexuesonglu_E",
+      "dist": 443.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_E",
+      "to": "bus_xuesongluyinpinglu_N",
+      "dist": 445.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_N",
+      "to": "bus_lianhuajiexuesonglu_E",
+      "dist": 445.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_E",
+      "to": "bus_xuesongluxueli_S",
+      "dist": 741.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluxueli_S",
+      "to": "bus_lianhuajiexuesonglu_E",
+      "dist": 741.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_lianhuajiexuesonglu_E",
+      "to": "bus_xuesongluxueli_N",
+      "dist": 760.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluxueli_N",
+      "to": "bus_lianhuajiexuesonglu_E",
+      "dist": 760.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglulianhuajie_N",
+      "to": "bus_xuesonglujinsuolu_N",
+      "dist": 273.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_N",
+      "to": "bus_xuesonglulianhuajie_N",
+      "dist": 273.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglulianhuajie_N",
+      "to": "bus_xuesonglujinsuolu_S",
+      "dist": 402.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_S",
+      "to": "bus_xuesonglulianhuajie_N",
+      "dist": 402.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglulianhuajie_N",
+      "to": "bus_xuesongluyinpinglu_S",
+      "dist": 540.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_S",
+      "to": "bus_xuesonglulianhuajie_N",
+      "dist": 540.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglulianhuajie_N",
+      "to": "bus_xuesongluyinpinglu_N",
+      "dist": 538.8,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_N",
+      "to": "bus_xuesonglulianhuajie_N",
+      "dist": 538.8,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglulianhuajie_S",
+      "to": "bus_xuesonglujinsuolu_N",
+      "dist": 100.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_N",
+      "to": "bus_xuesonglulianhuajie_S",
+      "dist": 100.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglulianhuajie_S",
+      "to": "bus_xuesonglujinsuolu_S",
+      "dist": 227.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_S",
+      "to": "bus_xuesonglulianhuajie_S",
+      "dist": 227.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglulianhuajie_S",
+      "to": "bus_xuesongluyinpinglu_S",
+      "dist": 365.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_S",
+      "to": "bus_xuesonglulianhuajie_S",
+      "dist": 365.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglulianhuajie_S",
+      "to": "bus_xuesongluyinpinglu_N",
+      "dist": 364.8,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_N",
+      "to": "bus_xuesonglulianhuajie_S",
+      "dist": 364.8,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglulianhuajie_S",
+      "to": "bus_xuesongluxueli_S",
+      "dist": 665.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluxueli_S",
+      "to": "bus_xuesonglulianhuajie_S",
+      "dist": 665.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglulianhuajie_S",
+      "to": "bus_xuesongluxueli_N",
+      "dist": 683.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluxueli_N",
+      "to": "bus_xuesonglulianhuajie_S",
+      "dist": 683.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_N",
+      "to": "bus_xuesongluyinpinglu_S",
+      "dist": 267.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_S",
+      "to": "bus_xuesonglujinsuolu_N",
+      "dist": 267.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_N",
+      "to": "bus_xuesongluyinpinglu_N",
+      "dist": 265.8,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_N",
+      "to": "bus_xuesonglujinsuolu_N",
+      "dist": 265.8,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_N",
+      "to": "bus_xuesongluxueli_S",
+      "dist": 567,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluxueli_S",
+      "to": "bus_xuesonglujinsuolu_N",
+      "dist": 567,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_N",
+      "to": "bus_xuesongluxueli_N",
+      "dist": 584.5,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluxueli_N",
+      "to": "bus_xuesonglujinsuolu_N",
+      "dist": 584.5,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_S",
+      "to": "bus_xuesongluyinpinglu_S",
+      "dist": 138.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_S",
+      "to": "bus_xuesonglujinsuolu_S",
+      "dist": 138.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_S",
+      "to": "bus_xuesongluyinpinglu_N",
+      "dist": 138.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_N",
+      "to": "bus_xuesonglujinsuolu_S",
+      "dist": 138.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_S",
+      "to": "bus_xuesongluxueli_S",
+      "dist": 438.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluxueli_S",
+      "to": "bus_xuesonglujinsuolu_S",
+      "dist": 438.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_S",
+      "to": "bus_xuesongluxueli_N",
+      "dist": 456.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluxueli_N",
+      "to": "bus_xuesonglujinsuolu_S",
+      "dist": 456.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesonglujinsuolu_S",
+      "to": "bus_xuesongcuizhujie_N",
+      "dist": 726.6,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongcuizhujie_N",
+      "to": "bus_xuesonglujinsuolu_S",
+      "dist": 726.6,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_S",
+      "to": "bus_xuesongluxueli_S",
+      "dist": 300,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluxueli_S",
+      "to": "bus_xuesongluyinpinglu_S",
+      "dist": 300,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_S",
+      "to": "bus_xuesongluxueli_N",
+      "dist": 318.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluxueli_N",
+      "to": "bus_xuesongluyinpinglu_S",
+      "dist": 318.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_S",
+      "to": "bus_xuesongcuizhujie_N",
+      "dist": 589.6,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongcuizhujie_N",
+      "to": "bus_xuesongluyinpinglu_S",
+      "dist": 589.6,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_N",
+      "to": "bus_xuesongluxueli_S",
+      "dist": 301.5,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluxueli_S",
+      "to": "bus_xuesongluyinpinglu_N",
+      "dist": 301.5,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_N",
+      "to": "bus_xuesongluxueli_N",
+      "dist": 318.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluxueli_N",
+      "to": "bus_xuesongluyinpinglu_N",
+      "dist": 318.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_N",
+      "to": "bus_xuesongcuizhujie_N",
+      "dist": 593.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongcuizhujie_N",
+      "to": "bus_xuesongluyinpinglu_N",
+      "dist": 593.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluxueli_S",
+      "to": "bus_xuesongcuizhujie_N",
+      "dist": 296.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongcuizhujie_N",
+      "to": "bus_xuesongluxueli_S",
+      "dist": 296.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongluxueli_N",
+      "to": "bus_xuesongcuizhujie_N",
+      "dist": 285.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_xuesongcuizhujie_N",
+      "to": "bus_xuesongluxueli_N",
+      "dist": 285.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 雪松路"
+    },
+    {
+      "from": "bus_lianhuajiechangchunlu_W",
+      "to": "bus_changcunlulianhuajie_S",
+      "dist": 152,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_changcunlulianhuajie_S",
+      "to": "bus_lianhuajiechangchunlu_W",
+      "dist": 152,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_lianhuajiechangchunlu_W",
+      "to": "bus_changcunlujinjujie_S",
+      "dist": 621.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_changcunlujinjujie_S",
+      "to": "bus_lianhuajiechangchunlu_W",
+      "dist": 621.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_lianhuajiechangchunlu_W",
+      "to": "bus_changcunlujinjujie_N",
+      "dist": 623.8,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_changcunlujinjujie_N",
+      "to": "bus_lianhuajiechangchunlu_W",
+      "dist": 623.8,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_changcunlulianhuajie_S",
+      "to": "bus_lianhuajiechangchunlu_E",
+      "dist": 163.6,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_lianhuajiechangchunlu_E",
+      "to": "bus_changcunlulianhuajie_S",
+      "dist": 163.6,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_changcunlulianhuajie_S",
+      "to": "bus_changcunlujinjujie_S",
+      "dist": 494.8,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_changcunlujinjujie_S",
+      "to": "bus_changcunlulianhuajie_S",
+      "dist": 494.8,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_changcunlulianhuajie_S",
+      "to": "bus_changcunlujinjujie_N",
+      "dist": 491.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_changcunlujinjujie_N",
+      "to": "bus_changcunlulianhuajie_S",
+      "dist": 491.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_lianhuajiechangchunlu_E",
+      "to": "bus_changcunlujinjujie_S",
+      "dist": 596.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_changcunlujinjujie_S",
+      "to": "bus_lianhuajiechangchunlu_E",
+      "dist": 596.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_lianhuajiechangchunlu_E",
+      "to": "bus_changcunlujinjujie_N",
+      "dist": 583,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_changcunlujinjujie_N",
+      "to": "bus_lianhuajiechangchunlu_E",
+      "dist": 583,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_changcunlujinjujie_S",
+      "to": "bus_changcunlufengyangjie_N",
+      "dist": 767.6,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_changcunlufengyangjie_N",
+      "to": "bus_changcunlujinjujie_S",
+      "dist": 767.6,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_changcunlujinjujie_N",
+      "to": "bus_changcunlufengyangjie_N",
+      "dist": 772.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_changcunlufengyangjie_N",
+      "to": "bus_changcunlujinjujie_N",
+      "dist": 772.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_changcunlufengyangjie_N",
+      "to": "bus_changcunlukexuedadao_N",
+      "dist": 685.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_changcunlukexuedadao_N",
+      "to": "bus_changcunlufengyangjie_N",
+      "dist": 685.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_changcunlufengyangjie_S",
+      "to": "bus_changcunlukexuedadao_N",
+      "dist": 474.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_changcunlukexuedadao_N",
+      "to": "bus_changcunlufengyangjie_S",
+      "dist": 474.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_changcunlufengyangjie_S",
+      "to": "bus_changcunlukexuedadao_S",
+      "dist": 713.5,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_changcunlukexuedadao_S",
+      "to": "bus_changcunlufengyangjie_S",
+      "dist": 713.5,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 长椿路"
+    },
+    {
+      "from": "bus_lianhuajiexisihuan_E",
+      "to": "bus_lianhuajieshixinzhuang_W",
+      "dist": 476,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 莲花街"
+    },
+    {
+      "from": "bus_lianhuajieshixinzhuang_W",
+      "to": "bus_lianhuajiexisihuan_E",
+      "dist": 476,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 莲花街"
+    },
+    {
+      "from": "bus_lianhuajiexisihuan_E",
+      "to": "bus_lianhuajieshixinzhuang_E",
+      "dist": 476.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 莲花街"
+    },
+    {
+      "from": "bus_lianhuajieshixinzhuang_E",
+      "to": "bus_lianhuajiexisihuan_E",
+      "dist": 476.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 莲花街"
+    },
+    {
+      "from": "bus_lianhuajiexisihuan_W",
+      "to": "bus_lianhuajieshixinzhuang_W",
+      "dist": 383.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 莲花街"
+    },
+    {
+      "from": "bus_lianhuajieshixinzhuang_W",
+      "to": "bus_lianhuajiexisihuan_W",
+      "dist": 383.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 莲花街"
+    },
+    {
+      "from": "bus_lianhuajiexisihuan_W",
+      "to": "bus_lianhuajieshixinzhuang_E",
+      "dist": 386.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 莲花街"
+    },
+    {
+      "from": "bus_lianhuajieshixinzhuang_E",
+      "to": "bus_lianhuajiexisihuan_W",
+      "dist": 386.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 莲花街"
+    },
+    {
+      "from": "bus_lianhuajiexisihuan_W",
+      "to": "bus_lianhuajiechangchunlu_W",
+      "dist": 727.5,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 莲花街"
+    },
+    {
+      "from": "bus_lianhuajiechangchunlu_W",
+      "to": "bus_lianhuajiexisihuan_W",
+      "dist": 727.5,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 莲花街"
+    },
+    {
+      "from": "bus_lianhuajieshixinzhuang_W",
+      "to": "bus_lianhuajiechangchunlu_W",
+      "dist": 348.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 莲花街"
+    },
+    {
+      "from": "bus_lianhuajiechangchunlu_W",
+      "to": "bus_lianhuajieshixinzhuang_W",
+      "dist": 348.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 莲花街"
+    },
+    {
+      "from": "bus_lianhuajieshixinzhuang_W",
+      "to": "bus_changcunlulianhuajie_S",
+      "dist": 446.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 莲花街"
+    },
+    {
+      "from": "bus_changcunlulianhuajie_S",
+      "to": "bus_lianhuajieshixinzhuang_W",
+      "dist": 446.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 莲花街"
+    },
+    {
+      "from": "bus_lianhuajieshixinzhuang_W",
+      "to": "bus_lianhuajiechangchunlu_E",
+      "dist": 579.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 莲花街"
+    },
+    {
+      "from": "bus_lianhuajiechangchunlu_E",
+      "to": "bus_lianhuajieshixinzhuang_W",
+      "dist": 579.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 莲花街"
+    },
+    {
+      "from": "bus_lianhuajieshixinzhuang_E",
+      "to": "bus_lianhuajiechangchunlu_W",
+      "dist": 350.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 莲花街"
+    },
+    {
+      "from": "bus_lianhuajiechangchunlu_W",
+      "to": "bus_lianhuajieshixinzhuang_E",
+      "dist": 350.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 莲花街"
+    },
+    {
+      "from": "bus_lianhuajieshixinzhuang_E",
+      "to": "bus_changcunlulianhuajie_S",
+      "dist": 443.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 莲花街"
+    },
+    {
+      "from": "bus_changcunlulianhuajie_S",
+      "to": "bus_lianhuajieshixinzhuang_E",
+      "dist": 443.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 莲花街"
+    },
+    {
+      "from": "bus_lianhuajieshixinzhuang_E",
+      "to": "bus_lianhuajiechangchunlu_E",
+      "dist": 579.6,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 莲花街"
+    },
+    {
+      "from": "bus_lianhuajiechangchunlu_E",
+      "to": "bus_lianhuajieshixinzhuang_E",
+      "dist": 579.6,
+      "modes": [
+        "walk"
+      ],
+      "desc": "同路步行: 莲花街"
+    },
+    {
+      "from": "bus_dongshimashequbeimen_W",
+      "to": "cross_lianhua_xuesong",
+      "dist": 434.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站到路口步行"
+    },
+    {
+      "from": "cross_lianhua_xuesong",
+      "to": "bus_dongshimashequbeimen_W",
+      "dist": 434.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "路口到公交站步行"
+    },
+    {
+      "from": "bus_dongshimashequbeimen_E",
+      "to": "cross_lianhua_xuesong",
+      "dist": 430.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站到路口步行"
+    },
+    {
+      "from": "cross_lianhua_xuesong",
+      "to": "bus_dongshimashequbeimen_E",
+      "dist": 430.3,
+      "modes": [
+        "walk"
+      ],
+      "desc": "路口到公交站步行"
+    },
+    {
+      "from": "bus_henangongyedaxuezhan_E",
+      "to": "cross_lianhua_xuesong",
+      "dist": 459,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站到路口步行"
+    },
+    {
+      "from": "cross_lianhua_xuesong",
+      "to": "bus_henangongyedaxuezhan_E",
+      "dist": 459,
+      "modes": [
+        "walk"
+      ],
+      "desc": "路口到公交站步行"
+    },
+    {
+      "from": "bus_lianhuajieshixinzhuang_W",
+      "to": "cross_lianhua_changchun",
+      "dist": 480.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站到路口步行"
+    },
+    {
+      "from": "cross_lianhua_changchun",
+      "to": "bus_lianhuajieshixinzhuang_W",
+      "dist": 480.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "路口到公交站步行"
+    },
+    {
+      "from": "bus_lianhuajieshixinzhuang_E",
+      "to": "cross_lianhua_changchun",
+      "dist": 481.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站到路口步行"
+    },
+    {
+      "from": "cross_lianhua_changchun",
+      "to": "bus_lianhuajieshixinzhuang_E",
+      "dist": 481.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "路口到公交站步行"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_N",
+      "to": "cross_lianhua_xuesong",
+      "dist": 465.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站到路口步行"
+    },
+    {
+      "from": "cross_lianhua_xuesong",
+      "to": "bus_xuesongluyinpinglu_N",
+      "dist": 465.2,
+      "modes": [
+        "walk"
+      ],
+      "desc": "路口到公交站步行"
+    },
+    {
+      "from": "bus_xuesongluyinpinglu_S",
+      "to": "cross_lianhua_xuesong",
+      "dist": 465.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站到路口步行"
+    },
+    {
+      "from": "cross_lianhua_xuesong",
+      "to": "bus_xuesongluyinpinglu_S",
+      "dist": 465.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "路口到公交站步行"
+    },
+    {
+      "from": "bus_xuesongcuizhujie_N",
+      "to": "cross_yingchun_xuesong",
+      "dist": 214,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站到路口步行"
+    },
+    {
+      "from": "cross_yingchun_xuesong",
+      "to": "bus_xuesongcuizhujie_N",
+      "dist": 214,
+      "modes": [
+        "walk"
+      ],
+      "desc": "路口到公交站步行"
+    },
+    {
+      "from": "bus_xuesongcuizhujie_N",
+      "to": "cross_cuizhu_shinan",
+      "dist": 455.5,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站到路口步行"
+    },
+    {
+      "from": "cross_cuizhu_shinan",
+      "to": "bus_xuesongcuizhujie_N",
+      "dist": 455.5,
+      "modes": [
+        "walk"
+      ],
+      "desc": "路口到公交站步行"
+    },
+    {
+      "from": "bus_kexuedadaoxuesonglu_W",
+      "to": "cross_kexuedadao_shinan",
+      "dist": 329.6,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站到路口步行"
+    },
+    {
+      "from": "cross_kexuedadao_shinan",
+      "to": "bus_kexuedadaoxuesonglu_W",
+      "dist": 329.6,
+      "modes": [
+        "walk"
+      ],
+      "desc": "路口到公交站步行"
+    },
+    {
+      "from": "bus_shinanlugongjiaozhan_W",
+      "to": "cross_kexuedadao_xuesong",
+      "dist": 460.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站到路口步行"
+    },
+    {
+      "from": "cross_kexuedadao_xuesong",
+      "to": "bus_shinanlugongjiaozhan_W",
+      "dist": 460.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "路口到公交站步行"
+    },
+    {
+      "from": "bus_shinanlugongjiaozhan_E",
+      "to": "cross_kexuedadao_xuesong",
+      "dist": 469.5,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交站到路口步行"
+    },
+    {
+      "from": "cross_kexuedadao_xuesong",
+      "to": "bus_shinanlugongjiaozhan_E",
+      "dist": 469.5,
+      "modes": [
+        "walk"
+      ],
+      "desc": "路口到公交站步行"
+    },
+    {
+      "from": "sub_haut",
+      "to": "bus_qianhewanxiangcheng_N",
+      "dist": 589.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "地铁到公交步行"
+    },
+    {
+      "from": "bus_qianhewanxiangcheng_N",
+      "to": "sub_haut",
+      "dist": 589.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交到地铁步行"
+    },
+    {
+      "from": "sub_haut",
+      "to": "bus_qianhewanxiangcheng_S",
+      "dist": 585.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "地铁到公交步行"
+    },
+    {
+      "from": "bus_qianhewanxiangcheng_S",
+      "to": "sub_haut",
+      "dist": 585.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交到地铁步行"
+    },
+    {
+      "from": "sub_haut",
+      "to": "bus_changcunlulianhuajie_S",
+      "dist": 188.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "地铁到公交步行"
+    },
+    {
+      "from": "bus_changcunlulianhuajie_S",
+      "to": "sub_haut",
+      "dist": 188.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交到地铁步行"
+    },
+    {
+      "from": "sub_haut",
+      "to": "bus_hanlinguojichenshequbeimen_W",
+      "dist": 325.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "地铁到公交步行"
+    },
+    {
+      "from": "bus_hanlinguojichenshequbeimen_W",
+      "to": "sub_haut",
+      "dist": 325.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交到地铁步行"
+    },
+    {
+      "from": "sub_haut",
+      "to": "bus_hanlinguojichenshequbeimen_E",
+      "dist": 325.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "地铁到公交步行"
+    },
+    {
+      "from": "bus_hanlinguojichenshequbeimen_E",
+      "to": "sub_haut",
+      "dist": 325.4,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交到地铁步行"
+    },
+    {
+      "from": "sub_haut",
+      "to": "bus_lianhuajieshixinzhuang_W",
+      "dist": 514.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "地铁到公交步行"
+    },
+    {
+      "from": "bus_lianhuajieshixinzhuang_W",
+      "to": "sub_haut",
+      "dist": 514.7,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交到地铁步行"
+    },
+    {
+      "from": "sub_haut",
+      "to": "bus_lianhuajieshixinzhuang_E",
+      "dist": 517.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "地铁到公交步行"
+    },
+    {
+      "from": "bus_lianhuajieshixinzhuang_E",
+      "to": "sub_haut",
+      "dist": 517.9,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交到地铁步行"
+    },
+    {
+      "from": "sub_zzu",
+      "to": "bus_changcunlufengyangjie_S",
+      "dist": 551.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "地铁到公交步行"
+    },
+    {
+      "from": "bus_changcunlufengyangjie_S",
+      "to": "sub_zzu",
+      "dist": 551.1,
+      "modes": [
+        "walk"
+      ],
+      "desc": "公交到地铁步行"
     }
   ]
 }
