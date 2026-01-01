@@ -4,6 +4,7 @@ import (
 	"container/heap"
 	"fmt"
 	"math"
+	"slices"
 	"traffic-system/model"
 )
 
@@ -30,11 +31,11 @@ type PathResult struct {
 
 // PriorityQueueItem 优先队列中的元素
 type PriorityQueueItem struct {
-	NodeID   string
-	Cost     float64 // 时间成本 (秒)
-	Mode     string  // 到达该节点使用的交通方式
-	LineID   string  // 到达该节点使用的线路ID
-	Index    int     // 在堆中的索引
+	NodeID string
+	Cost   float64 // 时间成本 (秒)
+	Mode   string  // 到达该节点使用的交通方式
+	LineID string  // 到达该节点使用的线路ID
+	Index  int     // 在堆中的索引
 }
 
 // PriorityQueue 实现 heap.Interface 接口的优先队列
@@ -160,12 +161,12 @@ func (g *Graph) Dijkstra(startID, endID string, modeMask int) PathResult {
 	// 回溯路径和边
 	path := []string{}
 	for at := endID; at != ""; at = prev[at] {
-		path = append([]string{at}, path...)
+		path = append(path, at)
 		if at == startID {
 			break
 		}
 	}
-
+	slices.Reverse(path)
 	// 构建路径段信息
 	var totalTime float64 = 0
 	var totalDist float64 = 0
