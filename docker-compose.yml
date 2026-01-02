@@ -9,6 +9,7 @@ services:
       POSTGRES_PASSWORD: vvpassword
       POSTGRES_DB: vvtraffic
     volumes:
+      # 使用命名卷持久化数据库数据（安全，防止数据丢失）
       - postgres_data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
@@ -22,14 +23,16 @@ services:
       - "8080:8080"
     depends_on:
       - db
+    volumes:
+      - ./:/app
     environment:
-      # 这里的值必须对应 db 服务中的配置
-      DB_HOST: db          # 在 Docker 网络中，服务名即 Host
+      DB_HOST: db
       DB_PORT: 5432
       DB_USER: vvuser
       DB_PASSWORD: vvpassword
       DB_NAME: vvtraffic
       GIN_MODE: release
 
+# 声明命名卷
 volumes:
   postgres_data:

@@ -7,10 +7,10 @@ type Edge struct {
 	ID     uint           `json:"-" gorm:"primaryKey;autoIncrement"`
 	From   string         `json:"from" gorm:"index;not null"`
 	To     string         `json:"to" gorm:"index;not null"`
-	Dist   float64        `json:"dist"`                       // 距离 (米), 已经算好
-	Modes  pq.StringArray `json:"modes" gorm:"type:text[]"`   // 原始模式列表: ["car", "bus"]
-	LineID string         `json:"line_id,omitempty"`          // 线路ID, 仅公交/地铁有
-	Desc   string         `json:"desc,omitempty"`             // 描述
+	Dist   float64        `json:"dist"`                     // 距离 (米), 已经算好
+	Modes  pq.StringArray `json:"modes" gorm:"type:text[]"` // 原始模式列表: ["car", "bus"]
+	LineID string         `json:"line_id,omitempty"`        // 线路ID, 仅公交/地铁有
+	Desc   string         `json:"desc,omitempty"`           // 描述
 
 	// --- 下面这个字段 JSON 里没有，是我们在加载数据后算出来的 ---
 	ModeMask int `json:"-" gorm:"-"` // 位掩码，用于算法中毫秒级判断通行权限
@@ -46,11 +46,11 @@ const (
 // 各交通方式的平均等待/准备时间 (秒)
 // 这些时间反映了实际生活中的额外开销
 const (
-	WaitTimeWalk   = 0    // 步行: 无需等待
-	WaitTimeBike   = 30   // 骑行: 找车、解锁等 (共享单车约30秒)
-	WaitTimeCar    = 60   // 驾车: 找车位、启动等 (约1分钟)
-	WaitTimeBus    = 300  // 公交: 平均等待时间 (约5分钟，假设10分钟一班)
-	WaitTimeSubway = 180  // 地铁: 平均等待时间 (约3分钟，假设6分钟一班)
+	WaitTimeWalk   = 0   // 步行: 无需等待
+	WaitTimeBike   = 30  // 骑行: 找车、解锁等 (共享单车约30秒)
+	WaitTimeCar    = 60  // 驾车: 找车位、启动等 (约1分钟)
+	WaitTimeBus    = 300 // 公交: 平均等待时间 (约5分钟，假设10分钟一班)
+	WaitTimeSubway = 180 // 地铁: 平均等待时间 (约3分钟，假设6分钟一班)
 )
 
 // ParseModes 将字符串数组转换为位掩码
